@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Рекомендации — Особое семейное положение</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/shared.css">
+</head>
+<body>
+  <!-- print-tag:start -->
+  <div class="print-tag" role="presentation">
+    <span><span class="num">09</span> &nbsp; Каталог рекомендаций</span>
+    <span class="desc">Все персональные меры поддержки</span>
+    <span>Особое семейное положение · макеты</span>
+  </div>
+  <!-- print-tag:end -->
+  <div class="app-shell">
+    <div data-partial="app-sidebar" data-active="recommendations"></div>
+
+    <main>
+      <div data-partial="app-header" data-title="Рекомендации"></div>
+
+      <div class="content content-narrow">
+        <div class="flex items-center justify-between">
+          <div>
+            <h1 class="text-3xl">Меры поддержки для вашей семьи</h1>
+            <p class="text-muted mt-2">Подобраны по вашему профилю. Это ориентир, а не гарантия — перед обращением уточняйте условия.</p>
+          </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="card mt-6" style="padding: 16px 20px;">
+          <div class="flex items-center gap-3" style="flex-wrap: wrap;">
+            <div class="flex items-center gap-2" style="flex: 1; min-width: 240px;">
+              <i data-icon="search" data-size="16" style="color: var(--ink-500);"></i>
+              <input class="input" placeholder="Поиск по названию или ключевому слову" style="border: none; padding: 0; height: 32px;">
+            </div>
+            <button class="chip chip-green">Все · 12</button>
+            <button class="chip chip-outline">Выплаты · 3</button>
+            <button class="chip chip-outline">Льготы · 4</button>
+            <button class="chip chip-outline">Реабилитация · 2</button>
+            <button class="chip chip-outline">Образование · 2</button>
+            <button class="chip chip-outline">Организации · 1</button>
+          </div>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid grid-cols-2 gap-4 mt-6">
+          <a href="10-recommendation-detail.html" class="proactive">
+            <div class="top">
+              <span class="chip chip-green">Выплата</span>
+              <i data-icon="bookmark" data-size="18" style="color: var(--ink-500);"></i>
+            </div>
+            <h3>Ежемесячная выплата на ребёнка-инвалида</h3>
+            <p class="text-sm text-muted">Региональная мера. Назначается по заявлению через соцзащиту по месту жительства.</p>
+            <div class="meta">
+              <span class="chip chip-outline">Соцзащита</span>
+              <span class="chip chip-outline">4 документа</span>
+              <span class="chip chip-outline">Ежемесячно</span>
+            </div>
+          </a>
+
+          <a href="10-recommendation-detail.html" class="proactive">
+            <div class="top">
+              <span class="chip chip-green">Льгота</span>
+              <i data-icon="bookmark" data-size="18" style="color: var(--ink-500);"></i>
+            </div>
+            <h3>Компенсация оплаты ЖКУ — 50%</h3>
+            <p class="text-sm text-muted">Семьи с ребёнком-инвалидом получают компенсацию по коммунальным платежам.</p>
+            <div class="meta">
+              <span class="chip chip-outline">Соцзащита</span>
+              <span class="chip chip-outline">Ежемесячно</span>
+            </div>
+          </a>
+
+          <a href="10-recommendation-detail.html" class="proactive">
+            <div class="top">
+              <span class="chip chip-blue">Реабилитация</span>
+              <i data-icon="bookmark" data-size="18" style="color: var(--ink-500);"></i>
+            </div>
+            <h3>Программа «Сосновая горка»</h3>
+            <p class="text-sm text-muted">Курс комплексной реабилитации в Усольском районе. Бесплатно при наличии направления.</p>
+            <div class="meta">
+              <span class="chip chip-outline">Реабилитация</span>
+              <span class="chip chip-outline">21 день</span>
+            </div>
+          </a>
+
+          <a href="10-recommendation-detail.html" class="proactive">
+            <div class="top">
+              <span class="chip" style="background: var(--ink-100); color: var(--ink-700);">Образование</span>
+              <i data-icon="bookmark" data-size="18" style="color: var(--ink-500);"></i>
+            </div>
+            <h3>Тьютор и адаптированная программа</h3>
+            <p class="text-sm text-muted">Право на индивидуальный учебный план и сопровождение тьютора при заключении ПМПК.</p>
+            <div class="meta">
+              <span class="chip chip-outline">Образование</span>
+              <span class="chip chip-outline">Через школу</span>
+            </div>
+          </a>
+
+          <a href="10-recommendation-detail.html" class="proactive">
+            <div class="top">
+              <span class="chip chip-green">Выплата</span>
+              <i data-icon="bookmark" data-size="18" style="color: var(--ink-500);"></i>
+            </div>
+            <h3>Компенсация за самостоятельную реабилитацию</h3>
+            <p class="text-sm text-muted">Возврат части расходов на услуги, входящие в ИПРА, при покупке за свой счёт.</p>
+            <div class="meta">
+              <span class="chip chip-outline">Соцзащита</span>
+              <span class="chip chip-outline">Один раз в год</span>
+            </div>
+          </a>
+
+          <a href="10-recommendation-detail.html" class="proactive">
+            <div class="top">
+              <span class="chip chip-blue">Фонд</span>
+              <i data-icon="bookmark" data-size="18" style="color: var(--ink-500);"></i>
+            </div>
+            <h3>БФ «Подари жизнь» — Иркутск</h3>
+            <p class="text-sm text-muted">Помощь семьям с детьми с тяжёлыми заболеваниями. Поддержка по направлениям.</p>
+            <div class="meta">
+              <span class="chip chip-outline">НКО</span>
+              <span class="chip chip-outline">По заявке</span>
+            </div>
+          </a>
+
+          <a href="10-recommendation-detail.html" class="proactive">
+            <div class="top">
+              <span class="chip chip-green">Льгота</span>
+              <i data-icon="bookmark" data-size="18" style="color: var(--ink-500);"></i>
+            </div>
+            <h3>Бесплатный проезд на пригородных поездах</h3>
+            <p class="text-sm text-muted">Льгота для ребёнка-инвалида и сопровождающего лица в пределах Иркутской области.</p>
+            <div class="meta">
+              <span class="chip chip-outline">Транспорт</span>
+            </div>
+          </a>
+
+          <a href="10-recommendation-detail.html" class="proactive">
+            <div class="top">
+              <span class="chip chip-blue">Реабилитация</span>
+              <i data-icon="bookmark" data-size="18" style="color: var(--ink-500);"></i>
+            </div>
+            <h3>Технические средства реабилитации</h3>
+            <p class="text-sm text-muted">Получение слуховых аппаратов, средств коммуникации и других ТСР через соцфонд.</p>
+            <div class="meta">
+              <span class="chip chip-outline">ТСР</span>
+              <span class="chip chip-outline">По ИПРА</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="flex items-center justify-between mt-8 text-sm text-muted">
+          <span>Показано 8 из 12</span>
+          <button class="btn btn-secondary">Показать ещё</button>
+        </div>
+      </div>
+    </main>
+
+    <div data-partial="bottom-nav" data-active="recommendations"></div>
+  </div>
+
+  <script src="assets/icons.js"></script>
+  <script src="assets/partials.js"></script>
+</body>
+</html>

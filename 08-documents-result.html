@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Результат — Особое семейное положение</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/shared.css">
+</head>
+<body>
+  <!-- print-tag:start -->
+  <div class="print-tag" role="presentation">
+    <span><span class="num">08</span> &nbsp; Документы — результат</span>
+    <span class="desc">Краткое содержание и ключевые положения</span>
+    <span>Особое семейное положение · макеты</span>
+  </div>
+  <!-- print-tag:end -->
+  <div class="app-shell">
+    <div data-partial="app-sidebar" data-active="documents"></div>
+
+    <main>
+      <div data-partial="app-header" data-title="Результат обработки"></div>
+
+      <div class="content content-narrow">
+        <a href="07-documents-upload.html" class="btn-link"><i data-icon="arrowLeft" data-size="14"></i> Назад к загрузке</a>
+
+        <div class="flex items-center justify-between mt-4">
+          <div>
+            <h1 class="text-3xl">Уведомление о назначении пенсии</h1>
+            <p class="text-muted mt-2 text-sm flex items-center gap-2">
+              <i data-icon="check" data-size="14" style="color: var(--brand-green-600);"></i>
+              Обработка завершена · файл удалён после анализа
+            </p>
+          </div>
+          <div class="flex gap-2">
+            <button class="btn btn-secondary"><i data-icon="download" data-size="16"></i> Скачать краткое содержание</button>
+            <a href="06-chat.html" class="btn btn-primary"><i data-icon="message" data-size="16"></i> Задать вопрос по документу</a>
+          </div>
+        </div>
+
+        <!-- Processing stages (completed) -->
+        <div class="card mt-6" style="padding: 16px 20px;">
+          <div class="flex items-center gap-3" style="flex-wrap: wrap;">
+            <div class="flex items-center gap-2">
+              <span class="step-mark checked" style="width: 22px; height: 22px;"><i data-icon="check" data-size="14"></i></span>
+              <span class="text-sm">Извлечение текста</span>
+            </div>
+            <i data-icon="chevronRight" data-size="14" style="color: var(--ink-500);"></i>
+            <div class="flex items-center gap-2">
+              <span class="step-mark checked" style="width: 22px; height: 22px;"><i data-icon="check" data-size="14"></i></span>
+              <span class="text-sm">Анонимизация ПДн</span>
+            </div>
+            <i data-icon="chevronRight" data-size="14" style="color: var(--ink-500);"></i>
+            <div class="flex items-center gap-2">
+              <span class="step-mark checked" style="width: 22px; height: 22px;"><i data-icon="check" data-size="14"></i></span>
+              <span class="text-sm">Анализ</span>
+            </div>
+            <i data-icon="chevronRight" data-size="14" style="color: var(--ink-500);"></i>
+            <div class="flex items-center gap-2">
+              <span class="step-mark checked" style="width: 22px; height: 22px;"><i data-icon="check" data-size="14"></i></span>
+              <span class="text-sm font-semibold" style="color: var(--brand-green-700);">Готово</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Result -->
+        <div class="answer mt-6" style="max-width: 100%;">
+          <div class="answer-section">
+            <h4>Краткое содержание</h4>
+            <p>Документ — уведомление территориального органа социального фонда о назначении ежемесячной выплаты по случаю установления инвалидности ребёнка. Выплата начисляется с указанной даты и перечисляется на ваш банковский счёт.</p>
+          </div>
+
+          <div class="answer-section">
+            <h4>Ключевые положения</h4>
+            <ul style="padding-left: 0; list-style: none; display: flex; flex-direction: column; gap: 12px;">
+              <li style="display: flex; gap: 12px; align-items: flex-start;">
+                <span style="width: 4px; align-self: stretch; background: var(--danger); border-radius: 2px; flex-shrink: 0;"></span>
+                <div>
+                  <div class="font-semibold" style="color: var(--ink-900); font-size: 15px;">Срок обжалования — 3 месяца</div>
+                  <div class="text-sm text-muted mt-2">Если вы не согласны с расчётом или категорией выплаты, обжаловать можно в течение 3 месяцев со дня получения уведомления.</div>
+                </div>
+              </li>
+              <li style="display: flex; gap: 12px; align-items: flex-start;">
+                <span style="width: 4px; align-self: stretch; background: var(--warning); border-radius: 2px; flex-shrink: 0;"></span>
+                <div>
+                  <div class="font-semibold" style="color: var(--ink-900); font-size: 15px;">Дата начала выплат — 1-е число следующего месяца</div>
+                  <div class="text-sm text-muted mt-2">Перечисление начинается с месяца, следующего за датой подачи заявления.</div>
+                </div>
+              </li>
+              <li style="display: flex; gap: 12px; align-items: flex-start;">
+                <span style="width: 4px; align-self: stretch; background: var(--warning); border-radius: 2px; flex-shrink: 0;"></span>
+                <div>
+                  <div class="font-semibold" style="color: var(--ink-900); font-size: 15px;">Обязанность уведомлять об изменениях</div>
+                  <div class="text-sm text-muted mt-2">При изменении состава семьи, места жительства или статуса инвалидности необходимо сообщить в орган соцзащиты в течение 10 рабочих дней.</div>
+                </div>
+              </li>
+              <li style="display: flex; gap: 12px; align-items: flex-start;">
+                <span style="width: 4px; align-self: stretch; background: var(--brand-blue-600); border-radius: 2px; flex-shrink: 0;"></span>
+                <div>
+                  <div class="font-semibold" style="color: var(--ink-900); font-size: 15px;">Размер выплаты пересматривается ежегодно</div>
+                  <div class="text-sm text-muted mt-2">Индексация — традиционно 1 февраля каждого года.</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="answer-section">
+            <h4>Что это значит для вас</h4>
+            <p>С учётом вашего профиля (Иркутская область, ребёнок 7 лет с установленной инвалидностью): выплата назначена корректно, дополнительных заявлений сейчас не требуется. Обратите внимание на сроки обжалования и обязанность уведомлять о смене статуса.</p>
+          </div>
+
+          <div class="answer-section">
+            <h4>Следующие шаги</h4>
+            <ul class="stepper">
+              <li><span class="step-mark"></span><span><strong>Сверить реквизиты счёта</strong> — убедитесь, что в уведомлении указан корректный счёт для перечислений.</span></li>
+              <li><span class="step-mark"></span><span><strong>Сохранить копию документа</strong> — это понадобится при оформлении смежных мер (компенсация ЖКУ, проезд).</span></li>
+              <li><span class="step-mark"></span><span><strong>Записаться в МФЦ</strong>, если есть вопросы по расчёту — заранее, сроки обжалования ограничены.</span></li>
+            </ul>
+          </div>
+
+          <div class="disclaimer">
+            Ответ носит информационный характер и не заменяет консультацию профильного специалиста. Состав и условия мер поддержки могут меняться — перед обращением уточняйте актуальные требования в ответственной службе.
+          </div>
+
+          <div class="answer-actions">
+            <button class="btn btn-secondary btn-sm"><i data-icon="thumbsUp" data-size="14"></i> Полезно</button>
+            <button class="btn btn-secondary btn-sm"><i data-icon="thumbsDown" data-size="14"></i> Не нашёл нужное</button>
+            <button class="btn btn-ghost btn-sm"><i data-icon="share" data-size="14"></i> Поделиться</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div data-partial="bottom-nav" data-active="documents"></div>
+  </div>
+
+  <script src="assets/icons.js"></script>
+  <script src="assets/partials.js"></script>
+</body>
+</html>

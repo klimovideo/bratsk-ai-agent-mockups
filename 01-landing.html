@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Особое семейное положение — AI-навигатор поддержки</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/shared.css">
+</head>
+<body style="background: var(--surface);">
+  <!-- print-tag:start -->
+  <div class="print-tag" role="presentation">
+    <span><span class="num">01</span> &nbsp; Лендинг</span>
+    <span class="desc">Что умеет сервис, кому подходит, CTA «Начать»</span>
+    <span>Особое семейное положение · макеты</span>
+  </div>
+  <!-- print-tag:end -->
+  <div data-partial="public-header"></div>
+
+  <!-- Hero -->
+  <section style="padding: 96px max(32px, 5vw) 64px;">
+    <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: center;">
+      <div>
+        <span class="chip chip-green">Иркутская область</span>
+        <h1 class="text-display mt-4" style="max-width: 600px;">
+          Понятные шаги по мерам поддержки — без долгого поиска по сайтам
+        </h1>
+        <p class="text-lg mt-6 text-muted" style="max-width: 540px;">
+          Цифровой AI-навигатор для семей с детьми с ОВЗ, инвалидов, опекунов и попечителей.
+          Подскажет, какие льготы вам положены, объяснит документ простым языком и предложит конкретные шаги.
+        </p>
+        <div class="flex gap-3 mt-8">
+          <a href="03-register.html" class="btn btn-primary btn-lg">Начать</a>
+          <a href="#how" class="btn btn-secondary btn-lg">Как это работает</a>
+        </div>
+        <div class="flex gap-6 mt-8" style="color: var(--ink-500); font-size: 14px; flex-wrap: wrap;">
+          <span class="flex items-center gap-2"><i data-icon="shield" data-size="16"></i> Без ФИО и телефона</span>
+          <span class="flex items-center gap-2"><i data-icon="check" data-size="16"></i> Соответствует 152-ФЗ</span>
+          <span class="flex items-center gap-2"><i data-icon="bookOpen" data-size="16"></i> Источники — проверенные</span>
+        </div>
+      </div>
+
+      <!-- Hero visual: имитация интерфейса AI-навигатора -->
+      <div style="position: relative;">
+        <div class="card" style="padding: 20px; box-shadow: var(--elev-2); border-radius: var(--radius-xl);">
+          <div class="flex items-center gap-3" style="margin-bottom: 16px;">
+            <span class="brand-mark" style="width: 28px; height: 28px;"></span>
+            <span class="font-semibold" style="color: var(--ink-900);">Навигатор</span>
+            <span class="conf conf-ok" style="margin-left: auto;"><i data-icon="check" data-size="12"></i> по базе знаний</span>
+          </div>
+          <div class="bubble bubble-user" style="margin-left: auto; max-width: 80%; margin-bottom: 12px;">
+            Сыну 7 лет, есть инвалидность по слуху. На какие льготы по школе мы можем рассчитывать?
+          </div>
+          <div style="background: var(--surface); border: 1px solid var(--ink-200); border-radius: var(--radius-lg); padding: 16px;">
+            <div style="font-size: 13px; font-weight: 600; text-transform: uppercase; color: var(--ink-500); letter-spacing: 0.04em; margin-bottom: 6px;">Краткий вывод</div>
+            <div>Ребёнок имеет право на адаптированную образовательную программу и сопровождение тьютора.</div>
+            <div style="font-size: 13px; font-weight: 600; text-transform: uppercase; color: var(--ink-500); letter-spacing: 0.04em; margin: 16px 0 6px;">Следующие шаги</div>
+            <ul class="stepper">
+              <li><span class="step-mark"></span><span>Подготовить заключение ПМПК</span></li>
+              <li><span class="step-mark"></span><span>Подать заявление в школу по месту жительства</span></li>
+              <li><span class="step-mark"></span><span>Запросить индивидуальный учебный план</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="proactive" style="position: absolute; right: -24px; bottom: -32px; max-width: 320px; box-shadow: var(--elev-2);">
+          <div class="top">
+            <span class="chip chip-green">Рекомендация</span>
+            <i data-icon="sparkles" data-size="18" style="color: var(--brand-green-600);"></i>
+          </div>
+          <h3 style="font-size: 16px;">Региональная выплата на ребёнка-инвалида</h3>
+          <div class="text-sm text-muted">Подходит вашей семье по профилю</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how" style="padding: 64px max(32px, 5vw); background: var(--surface-muted);">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <h2 class="text-3xl">Как это работает</h2>
+      <p class="text-muted mt-2" style="max-width: 640px;">Один интерфейс, четыре сценария. Профиль семьи — основа персонализации.</p>
+
+      <div class="grid grid-cols-4 gap-6 mt-8">
+        <div>
+          <div style="width: 44px; height: 44px; border-radius: var(--radius-md); background: var(--brand-green-100); color: var(--brand-green-700); display: inline-flex; align-items: center; justify-content: center; font-weight: 600; font-size: 18px;">1</div>
+          <h3 class="text-xl mt-4">Заполняете профиль семьи</h3>
+          <p class="text-muted mt-2 text-sm">Регион, состав семьи, статус, уже получаемые льготы. Без ФИО, телефона и email.</p>
+        </div>
+        <div>
+          <div style="width: 44px; height: 44px; border-radius: var(--radius-md); background: var(--brand-green-100); color: var(--brand-green-700); display: inline-flex; align-items: center; justify-content: center; font-weight: 600; font-size: 18px;">2</div>
+          <h3 class="text-xl mt-4">Получаете рекомендации</h3>
+          <p class="text-muted mt-2 text-sm">Навигатор сразу предложит меры поддержки, которые могут подойти вашей семье.</p>
+        </div>
+        <div>
+          <div style="width: 44px; height: 44px; border-radius: var(--radius-md); background: var(--brand-green-100); color: var(--brand-green-700); display: inline-flex; align-items: center; justify-content: center; font-weight: 600; font-size: 18px;">3</div>
+          <h3 class="text-xl mt-4">Задаёте вопросы</h3>
+          <p class="text-muted mt-2 text-sm">Ответ структурирован: вывод, обоснование, следующие шаги, источник.</p>
+        </div>
+        <div>
+          <div style="width: 44px; height: 44px; border-radius: var(--radius-md); background: var(--brand-green-100); color: var(--brand-green-700); display: inline-flex; align-items: center; justify-content: center; font-weight: 600; font-size: 18px;">4</div>
+          <h3 class="text-xl mt-4">Загружаете документ</h3>
+          <p class="text-muted mt-2 text-sm">Сложный документ объясняем простым языком. Файл не сохраняется после обработки.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Audience -->
+  <section id="audience" style="padding: 64px max(32px, 5vw);">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <h2 class="text-3xl">Кому подходит</h2>
+      <div class="grid grid-cols-4 gap-4 mt-8">
+        <div class="card">
+          <i data-icon="user" data-size="24" style="color: var(--brand-green-600);"></i>
+          <h3 class="text-lg mt-4">Семьям с детьми с ОВЗ</h3>
+          <p class="text-sm text-muted mt-2">Подбор образовательных и реабилитационных маршрутов.</p>
+        </div>
+        <div class="card">
+          <i data-icon="user" data-size="24" style="color: var(--brand-green-600);"></i>
+          <h3 class="text-lg mt-4">Молодым инвалидам</h3>
+          <p class="text-sm text-muted mt-2">Льготы, занятость, профессиональная реабилитация.</p>
+        </div>
+        <div class="card">
+          <i data-icon="user" data-size="24" style="color: var(--brand-green-600);"></i>
+          <h3 class="text-lg mt-4">Опекунам</h3>
+          <p class="text-sm text-muted mt-2">Выплаты, обязанности, отчётность.</p>
+        </div>
+        <div class="card">
+          <i data-icon="user" data-size="24" style="color: var(--brand-green-600);"></i>
+          <h3 class="text-lg mt-4">Попечителям</h3>
+          <p class="text-sm text-muted mt-2">Структурированные ответы и история обращений.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy strip -->
+  <section style="padding: 48px max(32px, 5vw); background: var(--surface-muted);">
+    <div style="max-width: 1100px; margin: 0 auto;" class="grid grid-cols-3 gap-6">
+      <div>
+        <div class="flex items-center gap-3"><i data-icon="shield" data-size="20" style="color: var(--brand-green-600);"></i><h3 class="text-lg">Минимум данных</h3></div>
+        <p class="text-sm text-muted mt-2">Только то, что нужно для подбора мер. Без ФИО, телефона, email.</p>
+      </div>
+      <div>
+        <div class="flex items-center gap-3"><i data-icon="trash" data-size="20" style="color: var(--brand-green-600);"></i><h3 class="text-lg">Документ не сохраняется</h3></div>
+        <p class="text-sm text-muted mt-2">Используется только для обработки. После — удаляется.</p>
+      </div>
+      <div>
+        <div class="flex items-center gap-3"><i data-icon="bookOpen" data-size="20" style="color: var(--brand-green-600);"></i><h3 class="text-lg">Источники указаны</h3></div>
+        <p class="text-sm text-muted mt-2">Каждый ответ опирается на проверенные материалы.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="padding: 96px max(32px, 5vw);">
+    <div style="max-width: 720px; margin: 0 auto; text-align: center;">
+      <h2 class="text-3xl">Начните с заполнения профиля семьи — это занимает 2–3 минуты</h2>
+      <p class="text-lg text-muted mt-4">Регистрация без email и телефона. После регистрации вы получите family_id для входа.</p>
+      <a href="03-register.html" class="btn btn-primary btn-lg mt-8">Создать профиль</a>
+    </div>
+  </section>
+
+  <div data-partial="public-footer"></div>
+
+  <script src="assets/icons.js"></script>
+  <script src="assets/partials.js"></script>
+</body>
+</html>

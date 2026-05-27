@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Профиль — Особое семейное положение</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/shared.css">
+</head>
+<body>
+  <!-- print-tag:start -->
+  <div class="print-tag" role="presentation">
+    <span><span class="num">13</span> &nbsp; Профиль семьи</span>
+    <span class="desc">Редактирование данных профиля</span>
+    <span>Особое семейное положение · макеты</span>
+  </div>
+  <!-- print-tag:end -->
+  <div class="app-shell">
+    <div data-partial="app-sidebar" data-active="profile"></div>
+
+    <main>
+      <div data-partial="app-header" data-title="Профиль семьи"></div>
+
+      <div class="content content-narrow">
+        <div class="flex items-center justify-between">
+          <div>
+            <h1 class="text-3xl">Профиль семьи</h1>
+            <p class="text-muted mt-2">Эти данные используются навигатором для подбора рекомендаций. Обновляйте, если ситуация изменилась.</p>
+          </div>
+          <span class="chip chip-green"><i data-icon="check" data-size="14"></i> Заполнен на 100%</span>
+        </div>
+
+        <!-- Sections -->
+        <section class="mt-8">
+          <div class="flex items-center gap-2 mb-2"><i data-icon="user" data-size="18" style="color: var(--brand-green-600);"></i><h2 class="text-xl">Кто пользуется сервисом</h2></div>
+          <div class="card mt-4" style="padding: 0;">
+            <div style="display: grid; grid-template-columns: 240px 1fr auto; padding: 16px 20px; align-items: center;">
+              <span class="text-muted text-sm">Категория</span>
+              <span style="color: var(--ink-900);">Семья с ребёнком с ОВЗ</span>
+              <button class="btn btn-ghost btn-sm"><i data-icon="edit" data-size="14"></i> Изменить</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="mt-8">
+          <div class="flex items-center gap-2 mb-2"><i data-icon="pin" data-size="18" style="color: var(--brand-green-600);"></i><h2 class="text-xl">Регион</h2></div>
+          <div class="card mt-4" style="padding: 0;">
+            <div style="display: grid; grid-template-columns: 240px 1fr auto; padding: 16px 20px; border-bottom: 1px solid var(--ink-200); align-items: center;">
+              <span class="text-muted text-sm">Регион</span>
+              <span style="color: var(--ink-900);">Иркутская область</span>
+              <span class="text-muted text-sm">регион сервиса</span>
+            </div>
+            <div style="display: grid; grid-template-columns: 240px 1fr auto; padding: 16px 20px; align-items: center;">
+              <span class="text-muted text-sm">Город / район</span>
+              <span style="color: var(--ink-900);">Иркутск</span>
+              <button class="btn btn-ghost btn-sm"><i data-icon="edit" data-size="14"></i> Изменить</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="mt-8">
+          <div class="flex items-center gap-2 mb-2"><i data-icon="user" data-size="18" style="color: var(--brand-green-600);"></i><h2 class="text-xl">Состав семьи и статус</h2></div>
+          <div class="card mt-4" style="padding: 0;">
+            <div style="display: grid; grid-template-columns: 240px 1fr auto; padding: 16px 20px; border-bottom: 1px solid var(--ink-200); align-items: center;">
+              <span class="text-muted text-sm">Возраст ребёнка</span>
+              <span style="color: var(--ink-900);">7 лет</span>
+              <button class="btn btn-ghost btn-sm"><i data-icon="edit" data-size="14"></i> Изменить</button>
+            </div>
+            <div style="display: grid; grid-template-columns: 240px 1fr auto; padding: 16px 20px; border-bottom: 1px solid var(--ink-200); align-items: center;">
+              <span class="text-muted text-sm">Статус ОВЗ / инвалидности</span>
+              <span style="color: var(--ink-900);">Установлена инвалидность по слуху</span>
+              <button class="btn btn-ghost btn-sm"><i data-icon="edit" data-size="14"></i> Изменить</button>
+            </div>
+            <div style="display: grid; grid-template-columns: 240px 1fr auto; padding: 16px 20px; align-items: center;">
+              <span class="text-muted text-sm">Образовательный статус</span>
+              <span style="color: var(--ink-900);">Учится в общеобразовательной школе, 1 класс</span>
+              <button class="btn btn-ghost btn-sm"><i data-icon="edit" data-size="14"></i> Изменить</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="mt-8">
+          <div class="flex items-center gap-2 mb-2"><i data-icon="check" data-size="18" style="color: var(--brand-green-600);"></i><h2 class="text-xl">Уже получаемые льготы</h2></div>
+          <div class="card mt-4">
+            <div class="flex gap-2" style="flex-wrap: wrap;">
+              <span class="chip chip-green">Пенсия по инвалидности</span>
+              <span class="chip chip-green">Компенсация ЖКУ — 50%</span>
+              <span class="chip chip-green">Бесплатный проезд</span>
+              <button class="chip chip-outline"><i data-icon="plus" data-size="12"></i> Добавить</button>
+            </div>
+            <div class="text-sm text-muted mt-4">Эти данные помогают навигатору не предлагать то, что вы уже получаете.</div>
+          </div>
+        </section>
+
+        <section class="mt-8">
+          <div class="flex items-center gap-2 mb-2"><i data-icon="shield" data-size="18" style="color: var(--brand-green-600);"></i><h2 class="text-xl">Безопасность</h2></div>
+          <div class="card mt-4" style="padding: 0;">
+            <div style="display: grid; grid-template-columns: 240px 1fr auto; padding: 16px 20px; border-bottom: 1px solid var(--ink-200); align-items: center;">
+              <span class="text-muted text-sm">family_id</span>
+              <span class="font-mono" style="color: var(--ink-900);">f7a-9k2-mlv</span>
+              <button class="btn btn-ghost btn-sm"><i data-icon="copy" data-size="14"></i> Скопировать</button>
+            </div>
+            <div style="display: grid; grid-template-columns: 240px 1fr auto; padding: 16px 20px; align-items: center;">
+              <span class="text-muted text-sm">PIN-код</span>
+              <span style="color: var(--ink-900);">••••</span>
+              <a href="15-settings.html" class="btn btn-ghost btn-sm"><i data-icon="edit" data-size="14"></i> Изменить</a>
+            </div>
+          </div>
+        </section>
+
+        <div class="mt-8" style="padding-top: 24px; border-top: 1px solid var(--ink-200);">
+          <a href="15-settings.html" class="btn-link"><i data-icon="settings" data-size="14"></i> Перейти к настройкам и удалению данных →</a>
+        </div>
+      </div>
+    </main>
+
+    <div data-partial="bottom-nav" data-active="profile"></div>
+  </div>
+
+  <script src="assets/icons.js"></script>
+  <script src="assets/partials.js"></script>
+</body>
+</html>

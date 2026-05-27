@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Вход — Особое семейное положение</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/shared.css">
+</head>
+<body style="background: var(--surface-muted);">
+  <!-- print-tag:start -->
+  <div class="print-tag" role="presentation">
+    <span><span class="num">02</span> &nbsp; Вход</span>
+    <span class="desc">family_id + PIN, без email и телефона</span>
+    <span>Особое семейное положение · макеты</span>
+  </div>
+  <!-- print-tag:end -->
+  <div style="min-height: 100vh; display: flex; flex-direction: column;">
+    <header style="padding: 24px 32px;">
+      <a href="01-landing.html" class="flex items-center gap-3" style="color: var(--ink-900); font-weight: 600;">
+        <span class="brand-mark"></span> Особое семейное положение
+      </a>
+    </header>
+
+    <main style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 32px 24px;">
+      <div class="card" style="width: 100%; max-width: 440px; padding: 40px;">
+        <h1 class="text-2xl">Вход</h1>
+        <p class="text-muted text-sm mt-2">Используйте family_id и PIN, выданные при регистрации.</p>
+
+        <form class="flex flex-col gap-4 mt-6" onsubmit="event.preventDefault();">
+          <div class="field">
+            <label class="label" for="family-id">family_id</label>
+            <input id="family-id" class="input font-mono" placeholder="например, f7a-9k2-mlv" autocomplete="off" inputmode="text">
+          </div>
+          <div class="field">
+            <label class="label" for="pin">PIN-код</label>
+            <input id="pin" class="input font-mono" placeholder="••••" inputmode="numeric" maxlength="6" autocomplete="off" type="password">
+            <span class="helper">4–6 цифр, которые вы задали при регистрации.</span>
+          </div>
+
+          <button class="btn btn-primary btn-lg w-full mt-2">Войти</button>
+        </form>
+
+        <div class="mt-6" style="padding: 16px; background: #FFF6DC; border-radius: var(--radius-md); display: flex; gap: 12px;">
+          <i data-icon="alert" data-size="20" style="color: #8A6B00; flex-shrink: 0;"></i>
+          <div>
+            <div class="font-semibold" style="color: #8A6B00; font-size: 14px;">PIN не восстанавливается</div>
+            <div class="text-sm text-muted mt-2">Если вы потеряли family_id или PIN, восстановить доступ к профилю не получится — придётся создать новый. Это часть требований к минимизации персональных данных.</div>
+          </div>
+        </div>
+
+        <div class="mt-6 text-sm text-muted" style="text-align: center;">
+          Нет учётной записи? <a href="03-register.html">Зарегистрироваться</a>
+        </div>
+      </div>
+    </main>
+
+    <footer style="padding: 24px 32px; color: var(--ink-500); font-size: 13px; text-align: center;">
+      <a href="#" style="color: var(--ink-500);">Политика обработки данных</a> · <a href="#" style="color: var(--ink-500);">Соглашение</a>
+    </footer>
+  </div>
+
+  <script src="assets/icons.js"></script>
+</body>
+</html>

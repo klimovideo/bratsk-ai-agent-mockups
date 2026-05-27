@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Карта организаций — Особое семейное положение</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/shared.css">
+</head>
+<body>
+  <!-- print-tag:start -->
+  <div class="print-tag" role="presentation">
+    <span><span class="num">11</span> &nbsp; Карта организаций</span>
+    <span class="desc">2GIS · фильтры, список, маркеры</span>
+    <span>Особое семейное положение · макеты</span>
+  </div>
+  <!-- print-tag:end -->
+  <div class="app-shell">
+    <div data-partial="app-sidebar" data-active="places"></div>
+
+    <main style="display: flex; flex-direction: column; min-height: 100vh;">
+      <div data-partial="app-header" data-title="Карта организаций"></div>
+
+      <div style="display: grid; grid-template-columns: 380px 1fr; flex: 1; min-height: 0;">
+        <!-- Filters + list -->
+        <aside style="border-right: 1px solid var(--ink-200); background: var(--surface); display: flex; flex-direction: column; min-height: 0;">
+          <div style="padding: 20px; border-bottom: 1px solid var(--ink-200);">
+            <div class="flex items-center gap-2">
+              <i data-icon="search" data-size="18" style="color: var(--ink-500);"></i>
+              <input class="input" placeholder="Поиск по названию или адресу" style="border: none; padding: 0; height: 36px;">
+            </div>
+            <div class="flex gap-2 mt-4" style="flex-wrap: wrap;">
+              <button class="chip chip-green">Все · 48</button>
+              <button class="chip chip-outline">Соцзащита · 9</button>
+              <button class="chip chip-outline">Реабилитация · 12</button>
+              <button class="chip chip-outline">Фонды и НКО · 14</button>
+              <button class="chip chip-outline">Образование · 8</button>
+              <button class="chip chip-outline">Ресурсные центры · 5</button>
+            </div>
+            <div class="flex gap-2 mt-2" style="flex-wrap: wrap;">
+              <label class="flex items-center gap-2 text-sm">
+                <input type="checkbox" style="accent-color: var(--brand-green-600);">
+                <span>Открыто сейчас</span>
+              </label>
+              <span class="text-muted text-sm" style="margin-left: auto;">Найдено: 48</span>
+            </div>
+          </div>
+
+          <!-- Results -->
+          <div style="flex: 1; overflow-y: auto; padding: 12px;">
+            <a href="12-place-detail.html" class="card" style="display: block; padding: 16px; margin-bottom: 8px; border-color: var(--brand-green-600);">
+              <div class="flex items-start gap-3">
+                <span class="map-pin" style="position: static; transform: none;"></span>
+                <div style="flex:1;">
+                  <div class="font-semibold" style="color: var(--ink-900); font-size: 15px;">Управление соцзащиты по г. Иркутску</div>
+                  <div class="text-sm text-muted mt-2">ул. Карла Маркса, 26</div>
+                  <div class="flex gap-2 mt-2">
+                    <span class="chip chip-outline" style="height: 22px; font-size: 11px;">Соцзащита</span>
+                    <span class="chip chip-green" style="height: 22px; font-size: 11px;">Открыто</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="12-place-detail.html" class="card" style="display: block; padding: 16px; margin-bottom: 8px;">
+              <div class="flex items-start gap-3">
+                <span class="map-pin" style="position: static; transform: none;"></span>
+                <div style="flex:1;">
+                  <div class="font-semibold" style="color: var(--ink-900); font-size: 15px;">РЦ «Сосновая горка»</div>
+                  <div class="text-sm text-muted mt-2">Усольский р-н, Прибайкальский тракт, 10</div>
+                  <div class="flex gap-2 mt-2">
+                    <span class="chip chip-outline" style="height: 22px; font-size: 11px;">Реабилитация</span>
+                    <span class="chip chip-warn" style="height: 22px; font-size: 11px;">Откроется в 09:00</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="12-place-detail.html" class="card" style="display: block; padding: 16px; margin-bottom: 8px;">
+              <div class="flex items-start gap-3">
+                <span class="map-pin blue" style="position: static; transform: none;"></span>
+                <div style="flex:1;">
+                  <div class="font-semibold" style="color: var(--ink-900); font-size: 15px;">БФ «Подари жизнь» — Иркутск</div>
+                  <div class="text-sm text-muted mt-2">ул. Ленина, 18, оф. 305</div>
+                  <div class="flex gap-2 mt-2">
+                    <span class="chip chip-outline" style="height: 22px; font-size: 11px;">Фонд</span>
+                    <span class="chip chip-green" style="height: 22px; font-size: 11px;">Открыто</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="12-place-detail.html" class="card" style="display: block; padding: 16px; margin-bottom: 8px;">
+              <div class="flex items-start gap-3">
+                <span class="map-pin" style="position: static; transform: none;"></span>
+                <div style="flex:1;">
+                  <div class="font-semibold" style="color: var(--ink-900); font-size: 15px;">Центр ПМПК Иркутска</div>
+                  <div class="text-sm text-muted mt-2">ул. Лермонтова, 333а</div>
+                  <div class="flex gap-2 mt-2">
+                    <span class="chip chip-outline" style="height: 22px; font-size: 11px;">Образование</span>
+                    <span class="chip chip-green" style="height: 22px; font-size: 11px;">Открыто</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="12-place-detail.html" class="card" style="display: block; padding: 16px; margin-bottom: 8px;">
+              <div class="flex items-start gap-3">
+                <span class="map-pin blue" style="position: static; transform: none;"></span>
+                <div style="flex:1;">
+                  <div class="font-semibold" style="color: var(--ink-900); font-size: 15px;">Иркутская областная организация ВОИ</div>
+                  <div class="text-sm text-muted mt-2">ул. Польских Повстанцев, 1</div>
+                  <div class="flex gap-2 mt-2">
+                    <span class="chip chip-outline" style="height: 22px; font-size: 11px;">НКО</span>
+                    <span class="chip chip-warn" style="height: 22px; font-size: 11px;">Откроется в 10:00</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="12-place-detail.html" class="card" style="display: block; padding: 16px; margin-bottom: 8px;">
+              <div class="flex items-start gap-3">
+                <span class="map-pin" style="position: static; transform: none;"></span>
+                <div style="flex:1;">
+                  <div class="font-semibold" style="color: var(--ink-900); font-size: 15px;">Школа-интернат № 8 (адаптивная)</div>
+                  <div class="text-sm text-muted mt-2">ул. Депутатская, 14б</div>
+                  <div class="flex gap-2 mt-2">
+                    <span class="chip chip-outline" style="height: 22px; font-size: 11px;">Образование</span>
+                    <span class="chip chip-green" style="height: 22px; font-size: 11px;">Открыто</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </aside>
+
+        <!-- Map -->
+        <div class="map-mock" style="position: relative; min-height: 600px;">
+          <!-- Pins -->
+          <span class="map-pin" style="left: 35%; top: 40%;"></span>
+          <span class="map-pin blue" style="left: 48%; top: 30%;"></span>
+          <span class="map-pin" style="left: 55%; top: 55%;"></span>
+          <span class="map-pin" style="left: 40%; top: 65%;"></span>
+          <span class="map-pin blue" style="left: 62%; top: 45%;"></span>
+          <span class="map-pin" style="left: 28%; top: 52%;"></span>
+
+          <!-- Floating popover -->
+          <div class="card" style="position: absolute; left: 35%; top: calc(40% - 8px); transform: translate(-50%, -100%); width: 280px; box-shadow: var(--elev-2);">
+            <div class="font-semibold" style="color: var(--ink-900);">Управление соцзащиты по г. Иркутску</div>
+            <div class="text-sm text-muted mt-2">ул. Карла Маркса, 26</div>
+            <div class="flex gap-2 mt-4">
+              <a href="12-place-detail.html" class="btn btn-secondary btn-sm" style="flex: 1;">Подробнее</a>
+              <button class="btn btn-primary btn-sm" style="flex: 1;"><i data-icon="map" data-size="14"></i> Маршрут</button>
+            </div>
+          </div>
+
+          <!-- Map controls -->
+          <div style="position: absolute; right: 20px; top: 20px; display: flex; flex-direction: column; gap: 4px; background: var(--surface); border: 1px solid var(--ink-200); border-radius: var(--radius-md); box-shadow: var(--elev-1);">
+            <button class="btn btn-ghost" style="height: 40px; width: 40px; padding: 0;" aria-label="Приблизить">+</button>
+            <button class="btn btn-ghost" style="height: 40px; width: 40px; padding: 0; border-top: 1px solid var(--ink-200); border-radius: 0;" aria-label="Отдалить">−</button>
+          </div>
+
+          <!-- City label -->
+          <div style="position: absolute; left: 20px; top: 20px; background: var(--surface); border: 1px solid var(--ink-200); padding: 8px 14px; border-radius: var(--radius-md); display: flex; align-items: center; gap: 8px;">
+            <i data-icon="map" data-size="16" style="color: var(--brand-blue-600);"></i>
+            <span class="font-semibold" style="color: var(--ink-900); font-size: 14px;">Иркутск</span>
+            <button class="btn btn-link" style="font-size: 13px;">Сменить</button>
+          </div>
+
+          <!-- 2GIS attribution -->
+          <div style="position: absolute; right: 16px; bottom: 16px; background: rgba(255,255,255,0.95); padding: 4px 10px; border-radius: var(--radius-sm); font-size: 12px; color: var(--ink-500);">
+            Данные карты: 2GIS
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div data-partial="bottom-nav" data-active="places"></div>
+  </div>
+
+  <script src="assets/icons.js"></script>
+  <script src="assets/partials.js"></script>
+</body>
+</html>

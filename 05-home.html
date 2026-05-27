@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Главная — Особое семейное положение</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/shared.css">
+</head>
+<body>
+  <!-- print-tag:start -->
+  <div class="print-tag" role="presentation">
+    <span><span class="num">05</span> &nbsp; Главная</span>
+    <span class="desc">Проактивные рекомендации и быстрый старт чата</span>
+    <span>Особое семейное положение · макеты</span>
+  </div>
+  <!-- print-tag:end -->
+  <div class="app-shell">
+    <div data-partial="app-sidebar" data-active="home"></div>
+
+    <main>
+      <div data-partial="app-header" data-title="Главная"></div>
+
+      <div class="content content-narrow">
+        <!-- Hello -->
+        <div class="flex items-center justify-between">
+          <div>
+            <h1 class="text-3xl">Добрый день</h1>
+            <p class="text-muted mt-2">Профиль заполнен. Ниже — меры поддержки, которые могут подойти вашей семье.</p>
+          </div>
+          <span class="chip chip-green"><i data-icon="check" data-size="14"></i> Профиль 100%</span>
+        </div>
+
+        <!-- Ask AI quick start -->
+        <div class="card mt-8" style="padding: 20px; border: 1px solid var(--ink-200); box-shadow: var(--elev-1);">
+          <div class="flex items-center gap-3">
+            <i data-icon="message" data-size="20" style="color: var(--brand-green-600);"></i>
+            <span class="font-semibold" style="color: var(--ink-900);">Спросить навигатора</span>
+          </div>
+          <div class="flex gap-3 mt-4">
+            <input class="input" placeholder="Например: какие выплаты положены при инвалидности ребёнка по слуху?" style="flex: 1;">
+            <a href="06-chat.html" class="btn btn-primary"><i data-icon="send" data-size="16"></i> Отправить</a>
+          </div>
+          <div class="flex gap-2 mt-4" style="flex-wrap: wrap;">
+            <span class="text-sm text-muted" style="margin-right: 4px;">Часто спрашивают:</span>
+            <button class="chip chip-outline">Льготы для семьи</button>
+            <button class="chip chip-outline">Реабилитация</button>
+            <button class="chip chip-outline">Образование для ребёнка с ОВЗ</button>
+            <button class="chip chip-outline">Технические средства</button>
+          </div>
+        </div>
+
+        <!-- Proactive recommendations -->
+        <section class="mt-8">
+          <div class="flex items-center justify-between">
+            <div>
+              <h2 class="text-2xl">Что может быть актуально для вас</h2>
+              <p class="text-muted text-sm mt-2">На основе вашего профиля. Не гарантия получения, а ориентир для следующего шага.</p>
+            </div>
+            <a href="09-recommendations.html" class="btn-link">Все рекомендации →</a>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 mt-6">
+            <a href="10-recommendation-detail.html" class="proactive">
+              <div class="top">
+                <span class="chip chip-green">Выплата</span>
+                <i data-icon="bookmark" data-size="18" style="color: var(--ink-500);"></i>
+              </div>
+              <h3>Ежемесячная выплата на ребёнка-инвалида</h3>
+              <p class="text-sm text-muted">Региональная мера для семей с детьми-инвалидами до 18 лет. Размер выплаты согласуется ежегодно.</p>
+              <div class="meta">
+                <span class="chip chip-outline">Соцзащита</span>
+                <span class="chip chip-outline">Документы: 4</span>
+              </div>
+            </a>
+            <a href="10-recommendation-detail.html" class="proactive">
+              <div class="top">
+                <span class="chip chip-blue">Реабилитация</span>
+                <i data-icon="bookmark" data-size="18" style="color: var(--ink-500);"></i>
+              </div>
+              <h3>Программа «Сосновая горка»</h3>
+              <p class="text-sm text-muted">Курс комплексной реабилитации в Усольском районе. Бесплатно при наличии направления.</p>
+              <div class="meta">
+                <span class="chip chip-outline">Реабилитация</span>
+                <span class="chip chip-outline">2 организации</span>
+              </div>
+            </a>
+            <a href="10-recommendation-detail.html" class="proactive">
+              <div class="top">
+                <span class="chip chip-green">Льгота</span>
+                <i data-icon="bookmark" data-size="18" style="color: var(--ink-500);"></i>
+              </div>
+              <h3>Компенсация оплаты ЖКУ — 50%</h3>
+              <p class="text-sm text-muted">Семьи с ребёнком-инвалидом получают компенсацию по коммунальным платежам.</p>
+              <div class="meta">
+                <span class="chip chip-outline">Соцзащита</span>
+              </div>
+            </a>
+            <a href="10-recommendation-detail.html" class="proactive">
+              <div class="top">
+                <span class="chip" style="background: var(--ink-100); color: var(--ink-700);">Образование</span>
+                <i data-icon="bookmark" data-size="18" style="color: var(--ink-500);"></i>
+              </div>
+              <h3>Тьютор и адаптированная программа в школе</h3>
+              <p class="text-sm text-muted">Право на индивидуальный учебный план и сопровождение тьютора при наличии заключения ПМПК.</p>
+              <div class="meta">
+                <span class="chip chip-outline">Образование</span>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- Continue / unfinished -->
+        <section class="mt-8">
+          <h2 class="text-2xl">Незавершённые сценарии</h2>
+          <div class="card mt-4" style="display: flex; align-items: center; gap: 16px;">
+            <i data-icon="file" data-size="24" style="color: var(--brand-blue-600); flex-shrink: 0;"></i>
+            <div style="flex: 1;">
+              <div class="font-semibold" style="color: var(--ink-900);">Документ «Уведомление о назначении пенсии.pdf»</div>
+              <div class="text-sm text-muted mt-2">Загружен 2 минуты назад · идёт анализ</div>
+            </div>
+            <a href="08-documents-result.html" class="btn btn-secondary">Открыть</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div data-partial="bottom-nav" data-active="home"></div>
+  </div>
+
+  <script src="assets/icons.js"></script>
+  <script src="assets/partials.js"></script>
+</body>
+</html>

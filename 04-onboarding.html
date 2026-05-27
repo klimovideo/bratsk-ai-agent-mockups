@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Онбординг — Особое семейное положение</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/shared.css">
+</head>
+<body>
+  <!-- print-tag:start -->
+  <div class="print-tag" role="presentation">
+    <span><span class="num">04</span> &nbsp; Онбординг профиля</span>
+    <span class="desc">Категория, регион, статус, состав семьи</span>
+    <span>Особое семейное положение · макеты</span>
+  </div>
+  <!-- print-tag:end -->
+  <div class="wizard-shell">
+    <header class="wizard-header">
+      <a href="01-landing.html" class="flex items-center gap-3" style="color: var(--ink-900); font-weight: 600;">
+        <span class="brand-mark"></span> Особое семейное положение
+      </a>
+      <div class="wizard-progress">
+        <span>Знакомство</span>
+        <span class="dot active"></span>
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span style="color: var(--ink-700); margin-left: 4px;">шаг 2 из 3</span>
+      </div>
+    </header>
+
+    <div class="wizard-body">
+      <div class="wizard-card">
+        <span class="chip chip-green">Шаг 2 из 3 · Состав и статус</span>
+        <h1 class="text-3xl mt-4">Расскажите немного о вашей семье</h1>
+        <p class="text-muted mt-2">Эти данные нужны, чтобы навигатор подобрал релевантные меры поддержки. Можно пропустить — рекомендации будут менее точными.</p>
+
+        <!-- Категория пользователя -->
+        <div class="field mt-8">
+          <label class="label">Кто пользуется сервисом</label>
+          <div class="grid grid-cols-2 gap-3 mt-2">
+            <label class="card" style="padding: 16px; cursor: pointer; border-color: var(--brand-green-600); background: var(--brand-green-100);">
+              <div class="flex items-start gap-3">
+                <input type="radio" name="category" checked style="margin-top: 4px; accent-color: var(--brand-green-600);">
+                <div>
+                  <div class="font-semibold" style="color: var(--ink-900);">Семья с ребёнком с ОВЗ</div>
+                  <div class="text-sm text-muted mt-2">Ищу меры поддержки для ребёнка</div>
+                </div>
+              </div>
+            </label>
+            <label class="card" style="padding: 16px; cursor: pointer;">
+              <div class="flex items-start gap-3">
+                <input type="radio" name="category" style="margin-top: 4px;">
+                <div>
+                  <div class="font-semibold" style="color: var(--ink-900);">Молодой инвалид</div>
+                  <div class="text-sm text-muted mt-2">Информация для себя</div>
+                </div>
+              </div>
+            </label>
+            <label class="card" style="padding: 16px; cursor: pointer;">
+              <div class="flex items-start gap-3">
+                <input type="radio" name="category" style="margin-top: 4px;">
+                <div>
+                  <div class="font-semibold" style="color: var(--ink-900);">Опекун</div>
+                  <div class="text-sm text-muted mt-2">Опекаю несовершеннолетнего или недееспособного</div>
+                </div>
+              </div>
+            </label>
+            <label class="card" style="padding: 16px; cursor: pointer;">
+              <div class="flex items-start gap-3">
+                <input type="radio" name="category" style="margin-top: 4px;">
+                <div>
+                  <div class="font-semibold" style="color: var(--ink-900);">Попечитель</div>
+                  <div class="text-sm text-muted mt-2">Помогаю подопечному принимать решения</div>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Регион / город -->
+        <div class="grid grid-cols-2 gap-4 mt-6">
+          <div class="field">
+            <label class="label" for="region">Регион</label>
+            <select id="region" class="select" disabled style="background: var(--ink-100);">
+              <option>Иркутская область</option>
+            </select>
+            <span class="helper">Сервис работает по Иркутской области.</span>
+          </div>
+          <div class="field">
+            <label class="label" for="city">
+              Город или район
+              <span style="margin-left: 8px; color: var(--brand-blue-600); font-weight: 400; cursor: help; font-size: 13px;" title="Используется, чтобы показать ближайшие организации на карте">Зачем мы спрашиваем?</span>
+            </label>
+            <select id="city" class="select">
+              <option>Иркутск</option>
+              <option>Ангарск</option>
+              <option>Братск</option>
+              <option>Усть-Илимск</option>
+              <option>Шелехов</option>
+              <option>Другой</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Возраст ребёнка -->
+        <div class="field mt-6">
+          <label class="label">Возраст ребёнка</label>
+          <div class="flex gap-2 mt-2" style="flex-wrap: wrap;">
+            <button class="chip chip-outline">0–3 года</button>
+            <button class="chip chip-green">3–7 лет</button>
+            <button class="chip chip-outline">7–11 лет</button>
+            <button class="chip chip-outline">11–14 лет</button>
+            <button class="chip chip-outline">14–18 лет</button>
+            <button class="chip chip-outline">18+</button>
+          </div>
+        </div>
+
+        <!-- Инвалидность / ОВЗ -->
+        <div class="field mt-6">
+          <label class="label">Статус инвалидности или ОВЗ</label>
+          <div class="grid grid-cols-2 gap-2 mt-2">
+            <label class="flex items-center gap-3" style="padding: 12px; border: 1px solid var(--brand-green-600); border-radius: var(--radius-md); background: var(--brand-green-100);">
+              <input type="checkbox" checked style="accent-color: var(--brand-green-600);">
+              <span>Установлена инвалидность</span>
+            </label>
+            <label class="flex items-center gap-3" style="padding: 12px; border: 1px solid var(--ink-300); border-radius: var(--radius-md);">
+              <input type="checkbox">
+              <span>Статус ОВЗ</span>
+            </label>
+            <label class="flex items-center gap-3" style="padding: 12px; border: 1px solid var(--ink-300); border-radius: var(--radius-md);">
+              <input type="checkbox">
+              <span>Заключение ПМПК</span>
+            </label>
+            <label class="flex items-center gap-3" style="padding: 12px; border: 1px solid var(--ink-300); border-radius: var(--radius-md);">
+              <input type="checkbox">
+              <span>Пока без статуса</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Action -->
+        <div class="flex gap-3 mt-8" style="justify-content: space-between; align-items: center;">
+          <button class="btn btn-ghost">Пропустить шаг</button>
+          <div class="flex gap-3">
+            <button class="btn btn-secondary">Назад</button>
+            <a href="05-home.html" class="btn btn-primary btn-lg">Далее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/icons.js"></script>
+</body>
+</html>

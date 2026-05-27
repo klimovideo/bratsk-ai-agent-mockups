@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Админ — База знаний — Особое семейное положение</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/shared.css">
+</head>
+<body>
+  <!-- print-tag:start -->
+  <div class="print-tag" role="presentation">
+    <span><span class="num">17</span> &nbsp; Админ · База знаний</span>
+    <span class="desc">Управление материалами</span>
+    <span>Особое семейное положение · макеты</span>
+  </div>
+  <!-- print-tag:end -->
+  <div class="app-shell">
+    <div data-partial="admin-sidebar" data-active="knowledge"></div>
+
+    <main>
+      <div data-partial="admin-header" data-title="База знаний"></div>
+
+      <div class="content">
+        <div class="flex items-center justify-between">
+          <div>
+            <h1 class="text-3xl">База знаний</h1>
+            <p class="text-muted mt-2">Материалы, которые навигатор использует для ответов. Источник ответа всегда привязан к одному из этих материалов.</p>
+          </div>
+          <button class="btn btn-primary btn-lg"><i data-icon="plus" data-size="18"></i> Добавить материал</button>
+        </div>
+
+        <!-- Filters -->
+        <div class="card mt-6" style="padding: 16px 20px;">
+          <div class="flex items-center gap-3" style="flex-wrap: wrap;">
+            <div class="flex items-center gap-2" style="flex: 1; min-width: 240px;">
+              <i data-icon="search" data-size="16" style="color: var(--ink-500);"></i>
+              <input class="input" placeholder="Поиск по названию или содержимому" style="border: none; padding: 0; height: 32px;">
+            </div>
+            <button class="chip chip-blue">Все · 128</button>
+            <button class="chip chip-outline">Документы · 86</button>
+            <button class="chip chip-outline">Ссылки · 32</button>
+            <button class="chip chip-outline">Ресурсные карты · 10</button>
+            <button class="chip chip-outline">Готовые · 119</button>
+            <button class="chip chip-outline">Ошибки · 2</button>
+          </div>
+        </div>
+
+        <!-- Table -->
+        <div class="card mt-6" style="padding: 0;">
+          <table class="table">
+            <thead>
+              <tr>
+                <th style="width: 40%;">Материал</th>
+                <th>Тип</th>
+                <th>Статус</th>
+                <th>Загружен</th>
+                <th>Размер</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="flex items-center gap-3">
+                    <i data-icon="file" data-size="18" style="color: var(--brand-blue-600);"></i>
+                    <div>
+                      <div class="font-semibold" style="color: var(--ink-900);">Закон Иркутской области № 63-оз «О мерах поддержки семей»</div>
+                      <div class="text-xs text-muted">63-oz-irk.pdf</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="chip chip-outline">Документ</span></td>
+                <td><span class="conf conf-ok"><i data-icon="check" data-size="12"></i> Готов</span></td>
+                <td class="text-sm text-muted">22 мая, 11:08</td>
+                <td class="text-sm text-muted">1.2 МБ</td>
+                <td>
+                  <div class="actions">
+                    <button class="btn btn-ghost btn-sm" aria-label="Открыть"><i data-icon="external" data-size="14"></i></button>
+                    <button class="btn btn-ghost btn-sm" aria-label="Удалить"><i data-icon="trash" data-size="14"></i></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="flex items-center gap-3">
+                    <i data-icon="link" data-size="18" style="color: var(--brand-blue-600);"></i>
+                    <div>
+                      <div class="font-semibold" style="color: var(--ink-900);">sobes38.ru — раздел «Меры поддержки»</div>
+                      <div class="text-xs text-muted">https://sobes38.ru/measures</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="chip chip-outline">Ссылка</span></td>
+                <td><span class="conf conf-ok"><i data-icon="check" data-size="12"></i> Готов</span></td>
+                <td class="text-sm text-muted">21 мая, 16:32</td>
+                <td class="text-sm text-muted">—</td>
+                <td>
+                  <div class="actions">
+                    <button class="btn btn-ghost btn-sm" aria-label="Открыть"><i data-icon="external" data-size="14"></i></button>
+                    <button class="btn btn-ghost btn-sm" aria-label="Удалить"><i data-icon="trash" data-size="14"></i></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="flex items-center gap-3">
+                    <i data-icon="file" data-size="18" style="color: var(--brand-blue-600);"></i>
+                    <div>
+                      <div class="font-semibold" style="color: var(--ink-900);">Постановление Правительства РФ № 1075</div>
+                      <div class="text-xs text-muted">pp-1075.docx</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="chip chip-outline">Документ</span></td>
+                <td><span class="chip chip-blue"><i data-icon="clock" data-size="12"></i> Идёт обработка · 64%</span></td>
+                <td class="text-sm text-muted">сегодня, 09:18</td>
+                <td class="text-sm text-muted">820 КБ</td>
+                <td>
+                  <div class="actions">
+                    <button class="btn btn-ghost btn-sm" aria-label="Удалить"><i data-icon="trash" data-size="14"></i></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="flex items-center gap-3">
+                    <i data-icon="bookOpen" data-size="18" style="color: var(--brand-blue-600);"></i>
+                    <div>
+                      <div class="font-semibold" style="color: var(--ink-900);">Ресурсная карта «Реабилитация для детей с ОВЗ»</div>
+                      <div class="text-xs text-muted">irkutsk-rehab-2026.xlsx</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="chip chip-outline">Ресурсная карта</span></td>
+                <td><span class="conf conf-ok"><i data-icon="check" data-size="12"></i> Готов</span></td>
+                <td class="text-sm text-muted">20 мая, 14:51</td>
+                <td class="text-sm text-muted">156 КБ</td>
+                <td>
+                  <div class="actions">
+                    <button class="btn btn-ghost btn-sm"><i data-icon="external" data-size="14"></i></button>
+                    <button class="btn btn-ghost btn-sm"><i data-icon="trash" data-size="14"></i></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="flex items-center gap-3">
+                    <i data-icon="file" data-size="18" style="color: var(--brand-blue-600);"></i>
+                    <div>
+                      <div class="font-semibold" style="color: var(--ink-900);">Методические рекомендации Минобрнауки</div>
+                      <div class="text-xs text-muted">minobr-1082.pdf</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="chip chip-outline">Документ</span></td>
+                <td><span class="conf conf-not-found"><i data-icon="alert" data-size="12"></i> Ошибка: скан без OCR</span></td>
+                <td class="text-sm text-muted">19 мая, 10:24</td>
+                <td class="text-sm text-muted">3.4 МБ</td>
+                <td>
+                  <div class="actions">
+                    <button class="btn btn-secondary btn-sm">Повторить</button>
+                    <button class="btn btn-ghost btn-sm"><i data-icon="trash" data-size="14"></i></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="flex items-center gap-3">
+                    <i data-icon="file" data-size="18" style="color: var(--brand-blue-600);"></i>
+                    <div>
+                      <div class="font-semibold" style="color: var(--ink-900);">ФЗ «Об образовании в РФ», ст. 79</div>
+                      <div class="text-xs text-muted">fz-273-art79.pdf</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="chip chip-outline">Документ</span></td>
+                <td><span class="conf conf-ok"><i data-icon="check" data-size="12"></i> Готов</span></td>
+                <td class="text-sm text-muted">18 мая</td>
+                <td class="text-sm text-muted">512 КБ</td>
+                <td>
+                  <div class="actions">
+                    <button class="btn btn-ghost btn-sm"><i data-icon="external" data-size="14"></i></button>
+                    <button class="btn btn-ghost btn-sm"><i data-icon="trash" data-size="14"></i></button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="flex items-center justify-between mt-6 text-sm text-muted">
+          <span>Показано 6 из 128</span>
+          <div class="flex gap-2">
+            <button class="btn btn-secondary btn-sm">← Назад</button>
+            <button class="btn btn-secondary btn-sm">Далее →</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="assets/icons.js"></script>
+  <script src="assets/partials.js"></script>
+</body>
+</html>

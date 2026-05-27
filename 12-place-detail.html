@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Управление соцзащиты — Особое семейное положение</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/shared.css">
+</head>
+<body>
+  <!-- print-tag:start -->
+  <div class="print-tag" role="presentation">
+    <span><span class="num">12</span> &nbsp; Карточка организации</span>
+    <span class="desc">Контакты, услуги, маршрут</span>
+    <span>Особое семейное положение · макеты</span>
+  </div>
+  <!-- print-tag:end -->
+  <div class="app-shell">
+    <div data-partial="app-sidebar" data-active="places"></div>
+
+    <main>
+      <div data-partial="app-header" data-title="Карточка организации"></div>
+
+      <div class="content content-narrow">
+        <a href="11-places.html" class="btn-link"><i data-icon="arrowLeft" data-size="14"></i> К карте организаций</a>
+
+        <div class="grid mt-4" style="grid-template-columns: 1.4fr 1fr; gap: 32px;">
+          <div>
+            <div class="flex items-center gap-3">
+              <span class="chip chip-outline">Соцзащита</span>
+              <span class="chip chip-green">Открыто сейчас</span>
+            </div>
+
+            <h1 class="text-3xl mt-4">Управление социальной защиты населения по г. Иркутску</h1>
+            <p class="text-muted mt-2">Государственное казённое учреждение. Назначает ежемесячные выплаты, компенсации ЖКУ, оформляет документы по льготам.</p>
+
+            <!-- Quick actions -->
+            <div class="flex gap-3 mt-6">
+              <button class="btn btn-primary"><i data-icon="map" data-size="16"></i> Открыть маршрут в 2GIS</button>
+              <button class="btn btn-secondary"><i data-icon="phone" data-size="16"></i> Позвонить</button>
+              <a href="06-chat.html" class="btn btn-secondary"><i data-icon="message" data-size="16"></i> Спросить навигатор</a>
+            </div>
+
+            <!-- Info table -->
+            <section class="mt-8">
+              <h2 class="text-xl">Контакты и режим</h2>
+              <div class="card mt-4" style="padding: 0;">
+                <div style="display: grid; grid-template-columns: 160px 1fr; padding: 14px 20px; border-bottom: 1px solid var(--ink-200); align-items: start;">
+                  <span class="text-muted text-sm">Адрес</span>
+                  <span style="color: var(--ink-900);">664003, Иркутск, ул. Карла Маркса, 26</span>
+                </div>
+                <div style="display: grid; grid-template-columns: 160px 1fr; padding: 14px 20px; border-bottom: 1px solid var(--ink-200); align-items: start;">
+                  <span class="text-muted text-sm">Телефон</span>
+                  <span style="color: var(--ink-900);">+7 (3952) 24-00-00</span>
+                </div>
+                <div style="display: grid; grid-template-columns: 160px 1fr; padding: 14px 20px; border-bottom: 1px solid var(--ink-200); align-items: start;">
+                  <span class="text-muted text-sm">Сайт</span>
+                  <a href="#" style="color: var(--brand-blue-600);">sobes38.ru</a>
+                </div>
+                <div style="display: grid; grid-template-columns: 160px 1fr; padding: 14px 20px; align-items: start;">
+                  <span class="text-muted text-sm">Режим работы</span>
+                  <div>
+                    <div class="text-sm">Пн–Чт: 09:00 – 18:00</div>
+                    <div class="text-sm">Пт: 09:00 – 17:00</div>
+                    <div class="text-sm">Сб, Вс: выходной</div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Services -->
+            <section class="mt-8">
+              <h2 class="text-xl">Что можно решить</h2>
+              <div class="flex gap-2 mt-4" style="flex-wrap: wrap;">
+                <span class="chip chip-outline">Ежемесячная выплата на ребёнка-инвалида</span>
+                <span class="chip chip-outline">Компенсация ЖКУ</span>
+                <span class="chip chip-outline">Удостоверение многодетной семьи</span>
+                <span class="chip chip-outline">Социальная карта</span>
+                <span class="chip chip-outline">Помощь в трудной жизненной ситуации</span>
+                <span class="chip chip-outline">Региональные выплаты</span>
+              </div>
+            </section>
+
+            <!-- Linked recommendations -->
+            <section class="mt-8">
+              <h2 class="text-xl">Связанные меры поддержки</h2>
+              <div class="grid grid-cols-2 gap-3 mt-4">
+                <a href="10-recommendation-detail.html" class="proactive" style="padding: 14px 16px;">
+                  <div class="top"><span class="chip chip-green" style="height: 22px;">Выплата</span></div>
+                  <h3 style="font-size: 15px;">Ежемесячная выплата на ребёнка-инвалида</h3>
+                </a>
+                <a href="10-recommendation-detail.html" class="proactive" style="padding: 14px 16px;">
+                  <div class="top"><span class="chip chip-green" style="height: 22px;">Льгота</span></div>
+                  <h3 style="font-size: 15px;">Компенсация оплаты ЖКУ — 50%</h3>
+                </a>
+              </div>
+            </section>
+          </div>
+
+          <!-- Map sidebar -->
+          <aside>
+            <div class="card" style="padding: 0; overflow: hidden;">
+              <div class="map-mock" style="height: 280px; position: relative;">
+                <span class="map-pin" style="left: 50%; top: 50%;"></span>
+              </div>
+              <div style="padding: 16px 20px;">
+                <div class="text-xs text-muted">Координаты</div>
+                <div class="font-mono text-sm" style="color: var(--ink-700);">52.286387, 104.281588</div>
+                <button class="btn btn-primary w-full mt-4"><i data-icon="map" data-size="16"></i> Маршрут в 2GIS</button>
+                <button class="btn btn-secondary w-full mt-2"><i data-icon="copy" data-size="14"></i> Скопировать адрес</button>
+              </div>
+            </div>
+
+            <div class="mt-6 text-xs text-muted">
+              Данные карты предоставлены 2GIS. Перед визитом уточняйте режим работы по телефону.
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <div data-partial="bottom-nav" data-active="places"></div>
+  </div>
+
+  <script src="assets/icons.js"></script>
+  <script src="assets/partials.js"></script>
+</body>
+</html>
