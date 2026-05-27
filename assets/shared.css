@@ -593,18 +593,25 @@ button { font-family: inherit; cursor: pointer; }
 .print-tag { display: none; }
 
 @media print {
-  @page { size: 1440px 900px; margin: 0; }
+  @page { size: 1440px 1024px; margin: 0; }
   html, body { width: 1440px; background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   /* каждый макет — одна страница */
-  html, body { height: 900px !important; max-height: 900px !important; overflow: hidden !important; }
+  html, body { height: 1024px !important; max-height: 1024px !important; overflow: hidden !important; }
   .bottom-nav, .font-switch { display: none !important; }
-  .sidebar { position: static !important; display: flex !important; height: 900px !important; }
-  .aside { position: static !important; display: block !important; height: 900px !important; }
+  .sidebar { position: static !important; display: flex !important; height: 1024px !important; }
+  .aside { position: static !important; display: block !important; height: 1024px !important; }
   .app-shell { display: grid !important; grid-template-columns: 260px 1fr !important; min-height: auto !important; }
   .app-shell-with-aside { grid-template-columns: 260px 1fr 340px !important; }
   .app-shell-with-aside .aside { display: block !important; }
   .wizard-shell, .public-layout { min-height: auto; }
   .public-main { min-height: auto; }
+  /* визард — центрируем форму и даём ей помещаться */
+  .wizard-body { padding: 16px 32px !important; }
+  .wizard-card { max-width: 920px !important; }
+  /* grid не должен схлопываться в одну колонку при печати */
+  .grid-cols-2 { grid-template-columns: repeat(2, 1fr) !important; }
+  .grid-cols-3 { grid-template-columns: repeat(3, 1fr) !important; }
+  .grid-cols-4 { grid-template-columns: repeat(4, 1fr) !important; }
   /* плашка с подписью — фикс. высота 32px */
   .print-tag {
     display: flex; align-items: center; justify-content: space-between;
