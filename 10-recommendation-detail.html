@@ -11,7 +11,7 @@
   <!-- print-tag:start -->
   <div class="print-tag" role="presentation">
     <span><span class="num">10</span> &nbsp; Деталь меры поддержки</span>
-    <span class="desc">Описание, документы, шаги, организации</span>
+    <span class="desc">Шаги, QR-код, примеры документов</span>
     <span>Особое семейное положение · макеты</span>
   </div>
   <!-- print-tag:end -->
@@ -27,7 +27,7 @@
         <div class="flex items-center gap-3 mt-4">
           <span class="chip chip-green">Выплата</span>
           <span class="chip chip-outline">Соцзащита</span>
-          <span class="conf conf-ok"><i data-icon="check" data-size="12"></i> Подходит по профилю</span>
+          <span class="ai-badge"><i data-icon="sparkles" data-size="12"></i> Сгенерировано ИИ</span>
         </div>
 
         <h1 class="text-3xl mt-4">Ежемесячная выплата на ребёнка-инвалида</h1>
@@ -106,16 +106,39 @@
             </section>
 
             <section class="mt-8">
-              <h2 class="text-xl">Источники</h2>
-              <div class="flex gap-2 mt-4" style="flex-wrap: wrap;">
-                <a href="#" class="source-chip"><i data-icon="file" data-size="14"></i> Закон Иркутской области № 63-оз</a>
-                <a href="#" class="source-chip"><i data-icon="link" data-size="14"></i> sobes38.ru — раздел «Меры поддержки»</a>
-                <a href="#" class="source-chip"><i data-icon="file" data-size="14"></i> Постановление Правительства РФ № 1075</a>
+              <h2 class="text-xl">Примеры документов</h2>
+              <p class="text-sm text-muted mt-2">Шаблоны для автозаполнения при подаче заявления.</p>
+              <div class="flex gap-3 mt-4" style="flex-wrap: wrap;">
+                <a href="#" class="card" style="padding: 14px 16px; display: flex; align-items: center; gap: 10px; min-width: 200px;">
+                  <i data-icon="file" data-size="20" style="color: var(--brand-blue-600);"></i>
+                  <div>
+                    <div class="font-semibold text-sm">Заявление о назначении выплаты</div>
+                    <div class="text-xs text-muted">DOCX · скачать</div>
+                  </div>
+                </a>
+                <a href="#" class="card" style="padding: 14px 16px; display: flex; align-items: center; gap: 10px; min-width: 200px;">
+                  <i data-icon="file" data-size="20" style="color: var(--brand-blue-600);"></i>
+                  <div>
+                    <div class="font-semibold text-sm">Справка о составе семьи</div>
+                    <div class="text-xs text-muted">PDF · скачать</div>
+                  </div>
+                </a>
+              </div>
+            </section>
+
+            <section class="mt-8">
+              <h2 class="text-xl">QR-код для подачи</h2>
+              <div class="card mt-4" style="padding: 20px; display: flex; gap: 24px; align-items: center;">
+                <div style="width: 120px; height: 120px; background: var(--ink-100); border-radius: var(--radius-md); display: grid; place-items: center; font-size: 11px; color: var(--ink-500); text-align: center; padding: 8px;">QR-код<br>Госуслуги</div>
+                <div>
+                  <div class="font-semibold">Подать заявление онлайн</div>
+                  <p class="text-sm text-muted mt-2">Отсканируйте код камерой телефона — откроется услуга на Госуслугах.</p>
+                </div>
               </div>
             </section>
 
             <div class="disclaimer mt-8">
-              Ответ носит информационный характер и не заменяет консультацию профильного специалиста. Состав и условия мер поддержки могут меняться — перед обращением уточняйте актуальные требования в ответственной службе.
+              Рекомендация сгенерирована искусственным интеллектом на основе профиля семьи. Носит информационный характер — перед обращением уточняйте условия в ответственной службе.
             </div>
           </div>
 

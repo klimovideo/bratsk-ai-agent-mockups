@@ -11,7 +11,7 @@
   <!-- print-tag:start -->
   <div class="print-tag" role="presentation">
     <span><span class="num">18</span> &nbsp; Админ · Статистика</span>
-    <span class="desc">Подробные показатели и выгрузки</span>
+    <span class="desc">Агрегаты, выгрузка XLSX</span>
     <span>Особое семейное положение · макеты</span>
   </div>
   <!-- print-tag:end -->
@@ -25,14 +25,13 @@
         <div class="flex items-center justify-between">
           <div>
             <h1 class="text-3xl">Статистика</h1>
-            <p class="text-muted mt-2">Подробные показатели использования сервиса.</p>
+            <p class="text-muted mt-2">Агрегированные показатели. Тексты вопросов пользователей не хранятся.</p>
           </div>
           <div class="flex gap-2">
             <button class="chip chip-blue">30 дней</button>
             <button class="chip chip-outline">90 дней</button>
             <button class="chip chip-outline">Период</button>
-            <button class="btn btn-secondary"><i data-icon="download" data-size="16"></i> Выгрузить CSV</button>
-            <button class="btn btn-secondary"><i data-icon="download" data-size="16"></i> Выгрузить Excel</button>
+            <button class="btn btn-primary" id="exports"><i data-icon="download" data-size="16"></i> Выгрузить XLSX</button>
           </div>
         </div>
 
@@ -49,7 +48,7 @@
             <div class="delta">+8%</div>
           </div>
           <div class="stat-tile">
-            <div class="label">Доля с источником</div>
+            <div class="label">Ответов из базы знаний</div>
             <div class="value">94%</div>
             <div class="delta">+2 п.п.</div>
           </div>

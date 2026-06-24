@@ -11,203 +11,123 @@
   <!-- print-tag:start -->
   <div class="print-tag" role="presentation">
     <span><span class="num">06</span> &nbsp; Чат с навигатором</span>
-    <span class="desc">Структурированный ответ, источники, контекст</span>
+    <span class="desc">Сессия без истории, ИИ-бейдж, fallback на поддержку</span>
     <span>Особое семейное положение · макеты</span>
   </div>
   <!-- print-tag:end -->
-  <div class="app-shell app-shell-with-aside">
+  <div class="app-shell">
     <div data-partial="app-sidebar" data-active="chat"></div>
 
     <main style="display: flex; flex-direction: column; min-height: 100vh;">
       <div data-partial="app-header" data-title="Чат с навигатором"></div>
 
-      <!-- Tree sub-nav -->
-      <div style="display: grid; grid-template-columns: 280px 1fr; flex: 1; min-height: 0;">
-        <!-- Threads sidebar -->
-        <aside style="border-right: 1px solid var(--ink-200); background: var(--surface); padding: 20px 16px; overflow-y: auto;">
-          <div class="flex items-center justify-between mb-4" style="margin-bottom: 16px;">
-            <span class="font-semibold" style="color: var(--ink-900);">Диалоги</span>
-            <button class="btn btn-sm btn-primary"><i data-icon="plus" data-size="14"></i> Новый</button>
+      <div style="flex: 1; display: flex; flex-direction: column; min-height: 0;">
+        <div style="flex: 1; overflow-y: auto; padding: 24px 32px 16px; max-width: 880px; margin: 0 auto; width: 100%;">
+          <div class="flex items-center justify-between mb-4" style="padding-bottom: 12px; border-bottom: 1px solid var(--ink-200);">
+            <div class="text-sm text-muted">Текущая сессия · история не сохраняется после выхода</div>
+            <button class="btn btn-ghost btn-sm"><i data-icon="plus" data-size="14"></i> Новый вопрос</button>
           </div>
-          <div class="field">
-            <input class="input" placeholder="Поиск по диалогам" style="height: 40px;">
-          </div>
-          <div class="mt-6 flex flex-col gap-2">
-            <a href="#" class="nav-item active" style="font-size: 14px; padding: 12px; align-items: flex-start;">
-              <div style="flex:1;">
-                <div class="font-semibold" style="color: var(--ink-900); font-size: 14px;">Льготы для ребёнка с ОВЗ в школе</div>
-                <div class="text-xs text-muted mt-2">Сегодня · 4 сообщения</div>
-              </div>
-            </a>
-            <a href="#" class="nav-item" style="font-size: 14px; padding: 12px; align-items: flex-start;">
-              <div style="flex:1;">
-                <div class="font-semibold" style="color: var(--ink-900); font-size: 14px;">Реабилитация для ребёнка 7 лет</div>
-                <div class="text-xs text-muted mt-2">Вчера · 7 сообщений</div>
-              </div>
-            </a>
-            <a href="#" class="nav-item" style="font-size: 14px; padding: 12px; align-items: flex-start;">
-              <div style="flex:1;">
-                <div class="font-semibold" style="color: var(--ink-900); font-size: 14px;">Куда подать на компенсацию ЖКУ</div>
-                <div class="text-xs text-muted mt-2">3 дня назад · 2 сообщения</div>
-              </div>
-            </a>
-            <a href="#" class="nav-item" style="font-size: 14px; padding: 12px; align-items: flex-start;">
-              <div style="flex:1;">
-                <div class="font-semibold" style="color: var(--ink-900); font-size: 14px;">Технические средства реабилитации</div>
-                <div class="flex items-center gap-2 mt-2">
-                  <span class="chip chip-warn" style="height: 20px; font-size: 11px;">Частично</span>
-                  <span class="text-xs text-muted">5 дней назад</span>
+
+          <div class="chat-timeline" role="log" aria-live="polite">
+            <div class="bubble bubble-user">
+              Сыну 7 лет, есть инвалидность по слуху. Какие льготы есть для семьи в школе и какие документы нужны для адаптированной программы?
+            </div>
+
+            <div class="bubble bubble-clarify">
+              Уточните, пожалуйста: ребёнок уже учится в школе и вы хотите перейти на адаптированную программу, или предстоит первое поступление?
+            </div>
+
+            <div class="bubble bubble-user">
+              Учится в первом классе по общей программе, хотим перейти на адаптированную.
+            </div>
+
+            <div class="answer">
+              <div class="answer-header">
+                <div class="flex items-center gap-3">
+                  <span class="brand-mark" style="width: 24px; height: 24px;"></span>
+                  <span class="font-semibold" style="color: var(--ink-900);">Навигатор</span>
+                  <span class="ai-badge"><i data-icon="sparkles" data-size="12"></i> Сгенерировано ИИ</span>
                 </div>
               </div>
-            </a>
-            <a href="#" class="nav-item" style="font-size: 14px; padding: 12px; align-items: flex-start;">
-              <div style="flex:1;">
-                <div class="font-semibold" style="color: var(--ink-900); font-size: 14px;">Опека: отчётность за год</div>
-                <div class="flex items-center gap-2 mt-2">
-                  <span class="chip chip-danger" style="height: 20px; font-size: 11px;">Без ответа</span>
-                  <span class="text-xs text-muted">Неделю назад</span>
-                </div>
-              </div>
-            </a>
-          </div>
-        </aside>
 
-        <!-- Chat area -->
-        <div style="display: flex; flex-direction: column; min-height: 0;">
-          <div style="flex: 1; overflow-y: auto; padding: 32px 32px 16px;">
-            <div class="chat-timeline" role="log" aria-live="polite">
-              <!-- User -->
-              <div class="bubble bubble-user">
-                Сыну 7 лет, есть инвалидность по слуху. Какие льготы есть для семьи в школе и какие документы нужны для адаптированной программы?
+              <div class="answer-section">
+                <h4>Краткий вывод</h4>
+                <p>Ребёнок имеет право на адаптированную образовательную программу при наличии заключения ПМПК. Школа обязана организовать обучение после подачи заявления.</p>
               </div>
 
-              <!-- Clarifying -->
-              <div class="bubble bubble-clarify">
-                Уточните, пожалуйста: ребёнок уже учится в школе и вы хотите перейти на адаптированную программу, или предстоит первое поступление в первый класс?
+              <div class="answer-section">
+                <h4>Рекомендации</h4>
+                <ul>
+                  <li>Получить или актуализировать заключение ПМПК.</li>
+                  <li>Подать в школу заявление о переводе на адаптированную программу.</li>
+                  <li>Уточнить возможность сопровождения тьютором или сурдопереводчиком.</li>
+                </ul>
               </div>
 
-              <!-- User reply -->
-              <div class="bubble bubble-user">
-                Учится в первом классе по общей программе, хотим перейти на адаптированную.
+              <div class="answer-section">
+                <h4>Обоснование</h4>
+                <p>Право установлено ФЗ «Об образовании в РФ» (ст. 79) и региональными актами Иркутской области.</p>
               </div>
 
-              <!-- AI answer -->
-              <div class="answer">
-                <div class="answer-header">
-                  <div class="flex items-center gap-3">
-                    <span class="brand-mark" style="width: 24px; height: 24px;"></span>
-                    <span class="font-semibold" style="color: var(--ink-900);">Навигатор</span>
-                  </div>
-                  <span class="conf conf-ok"><i data-icon="check" data-size="12"></i> Найдено в базе знаний</span>
-                </div>
+              <div class="answer-section">
+                <h4>Следующие шаги</h4>
+                <ul class="stepper">
+                  <li><span class="step-mark"></span><span><strong>Запись на ПМПК</strong> — через поликлинику или центр ПМПК.</span></li>
+                  <li><span class="step-mark"></span><span><strong>Заключение ПМПК</strong> — оригинал и копия.</span></li>
+                  <li><span class="step-mark"></span><span><strong>Заявление в школу</strong> — на имя директора.</span></li>
+                </ul>
+              </div>
 
-                <div class="answer-section">
-                  <h4>Краткий вывод</h4>
-                  <p>Ребёнок имеет право на адаптированную образовательную программу и сопровождение тьютора при наличии заключения психолого-медико-педагогической комиссии (ПМПК). Школа обязана организовать обучение по такой программе после подачи заявления.</p>
-                </div>
+              <div class="disclaimer">
+                Ответ сгенерирован искусственным интеллектом и носит информационный характер. Не заменяет консультацию профильного специалиста.
+              </div>
 
-                <div class="answer-section">
-                  <h4>Рекомендации</h4>
-                  <ul>
-                    <li>Получить заключение ПМПК — оно фиксирует особые образовательные потребности ребёнка.</li>
-                    <li>Подать в школу заявление о переводе на адаптированную образовательную программу.</li>
-                    <li>Запросить разработку индивидуального учебного плана при необходимости.</li>
-                    <li>Уточнить в школе возможность сопровождения тьютором или сурдопереводчиком.</li>
-                  </ul>
-                </div>
+              <div class="answer-actions">
+                <button class="btn btn-secondary btn-sm"><i data-icon="thumbsUp" data-size="14"></i> Полезно</button>
+                <button class="btn btn-secondary btn-sm"><i data-icon="thumbsDown" data-size="14"></i> Не помогло</button>
+              </div>
+            </div>
 
-                <div class="answer-section">
-                  <h4>Обоснование</h4>
-                  <p>Право на адаптированную программу установлено Федеральным законом «Об образовании в РФ» (статья 79) и Порядком психолого-педагогической помощи (приказ Минобрнауки № 1082). Региональное регулирование в Иркутской области уточняет порядок взаимодействия со школами.</p>
+            <!-- Пример fallback при отсутствии ответа -->
+            <div class="answer" style="margin-top: 24px; opacity: 0.92;">
+              <div class="answer-header">
+                <div class="flex items-center gap-3">
+                  <span class="brand-mark" style="width: 24px; height: 24px;"></span>
+                  <span class="font-semibold">Навигатор</span>
+                  <span class="ai-badge"><i data-icon="sparkles" data-size="12"></i> Сгенерировано ИИ</span>
                 </div>
-
-                <div class="answer-section">
-                  <h4>Что подготовить — следующие шаги</h4>
-                  <ul class="stepper">
-                    <li><span class="step-mark"></span><span><strong>Запись на ПМПК</strong> — обращение через сайт центра психолого-педагогической помощи или поликлинику по месту жительства.</span></li>
-                    <li><span class="step-mark"></span><span><strong>Заключение ПМПК</strong> — оригинал и копия.</span></li>
-                    <li><span class="step-mark"></span><span><strong>Заявление в школу</strong> — на имя директора, образец обычно есть на сайте школы.</span></li>
-                    <li><span class="step-mark"></span><span><strong>Справка об инвалидности</strong> — копия заверенная.</span></li>
-                  </ul>
-                </div>
-
-                <div class="answer-section">
-                  <h4>Источники</h4>
-                  <div class="flex gap-2 mt-2" style="flex-wrap: wrap;">
-                    <a href="#" class="source-chip"><i data-icon="file" data-size="14"></i> ФЗ «Об образовании в РФ», ст. 79</a>
-                    <a href="#" class="source-chip"><i data-icon="file" data-size="14"></i> Приказ Минобрнауки № 1082</a>
-                    <a href="#" class="source-chip"><i data-icon="link" data-size="14"></i> Региональная методичка</a>
-                  </div>
-                </div>
-
-                <div class="disclaimer">
-                  Ответ носит информационный характер и не заменяет консультацию профильного специалиста. Состав и условия мер поддержки могут меняться — перед обращением уточняйте актуальные требования в ответственной службе.
-                </div>
-
-                <div class="answer-actions">
-                  <button class="btn btn-secondary btn-sm"><i data-icon="thumbsUp" data-size="14"></i> Полезно</button>
-                  <button class="btn btn-secondary btn-sm"><i data-icon="thumbsDown" data-size="14"></i> Не нашёл нужное</button>
-                  <button class="btn btn-ghost btn-sm"><i data-icon="bookmark" data-size="14"></i> Сохранить</button>
-                  <button class="btn btn-ghost btn-sm"><i data-icon="share" data-size="14"></i> Поделиться</button>
-                </div>
+                <span class="conf conf-partial"><i data-icon="alert" data-size="12"></i> Недостаточно данных</span>
+              </div>
+              <div class="answer-section">
+                <h4>Краткий вывод</h4>
+                <p>Не удалось найти достаточно информации в базе знаний для точного ответа на ваш вопрос.</p>
+              </div>
+              <div class="support-fallback">
+                <div class="font-semibold" style="color: #8A6B00;">Обратитесь в службу поддержки</div>
+                <p class="text-sm text-muted mt-2">Специалист поможет с нестандартной ситуацией.</p>
+                <div class="phone mt-3">8 (3952) 000-00-00</div>
+                <div class="text-xs text-muted mt-2">Пн–Пт 09:00–18:00 (Иркутск)</div>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- Composer -->
-          <div style="border-top: 1px solid var(--ink-200); background: var(--surface); padding: 16px 32px;">
-            <div class="flex gap-2 mb-3" style="margin-bottom: 8px; flex-wrap: wrap;">
-              <button class="chip chip-outline">Уточнить про сроки</button>
-              <button class="chip chip-outline">Куда подать заявление</button>
-              <button class="chip chip-outline">Дать список документов</button>
-            </div>
-            <div class="flex gap-2 items-end">
-              <button class="btn btn-ghost" aria-label="Прикрепить файл"><i data-icon="paperclip"></i></button>
-              <textarea class="textarea" placeholder="Напишите вопрос — навигатор учтёт ваш профиль" style="min-height: 56px;"></textarea>
-              <button class="btn btn-primary"><i data-icon="send"></i> Отправить</button>
-            </div>
-            <div class="text-xs text-muted mt-2">Нажмите <kbd style="background: var(--ink-100); padding: 1px 6px; border-radius: 4px; font-family: monospace;">Enter</kbd> чтобы отправить, <kbd style="background: var(--ink-100); padding: 1px 6px; border-radius: 4px; font-family: monospace;">Shift+Enter</kbd> для новой строки</div>
+        <div style="border-top: 1px solid var(--ink-200); background: var(--surface); padding: 16px 32px;">
+          <div class="flex gap-2 mb-2" style="flex-wrap: wrap;">
+            <button class="chip chip-outline">Льготы в школе</button>
+            <button class="chip chip-outline">Компенсация ЖКУ</button>
+            <button class="chip chip-outline">Реабилитация</button>
           </div>
+          <div class="flex gap-2 items-end" style="max-width: 880px; margin: 0 auto;">
+            <textarea class="textarea" placeholder="Напишите вопрос — навигатор учтёт профиль семьи" style="min-height: 56px;"></textarea>
+            <button class="btn btn-primary"><i data-icon="send"></i> Отправить</button>
+          </div>
+          <div class="text-xs text-muted mt-2" style="max-width: 880px; margin: 8px auto 0;">Не вводите ФИО и номера документов в чат. История не сохраняется после выхода.</div>
         </div>
       </div>
     </main>
 
-    <!-- Right context panel -->
-    <aside class="aside">
-      <div class="flex items-center justify-between">
-        <h3 class="text-lg">Откуда ответ</h3>
-        <button class="btn btn-ghost btn-sm" aria-label="Закрыть"><i data-icon="close" data-size="16"></i></button>
-      </div>
-
-      <div class="mt-6">
-        <div class="text-xs text-muted" style="text-transform: uppercase; letter-spacing: 0.04em; font-weight: 600;">Источники базы знаний</div>
-        <div class="flex flex-col gap-2 mt-4">
-          <a href="#" class="source-chip" style="justify-content: flex-start;"><i data-icon="file" data-size="14"></i> ФЗ «Об образовании в РФ», ст. 79</a>
-          <a href="#" class="source-chip" style="justify-content: flex-start;"><i data-icon="file" data-size="14"></i> Приказ Минобрнауки № 1082</a>
-          <a href="#" class="source-chip" style="justify-content: flex-start;"><i data-icon="link" data-size="14"></i> Региональная методичка Иркутской области</a>
-        </div>
-      </div>
-
-      <div class="mt-8">
-        <div class="text-xs text-muted" style="text-transform: uppercase; letter-spacing: 0.04em; font-weight: 600;">Что из профиля учтено</div>
-        <div class="flex flex-col gap-2 mt-4 text-sm">
-          <div class="flex items-start gap-2"><i data-icon="check" data-size="14" style="color: var(--brand-green-600); margin-top: 4px;"></i><span>Регион: Иркутская область</span></div>
-          <div class="flex items-start gap-2"><i data-icon="check" data-size="14" style="color: var(--brand-green-600); margin-top: 4px;"></i><span>Возраст ребёнка: 7 лет</span></div>
-          <div class="flex items-start gap-2"><i data-icon="check" data-size="14" style="color: var(--brand-green-600); margin-top: 4px;"></i><span>Статус: инвалидность по слуху</span></div>
-        </div>
-      </div>
-
-      <div class="mt-8">
-        <div class="text-xs text-muted" style="text-transform: uppercase; letter-spacing: 0.04em; font-weight: 600;">Полезное рядом</div>
-        <a href="11-places.html" class="card mt-4" style="display: flex; gap: 12px; padding: 14px; align-items: flex-start;">
-          <i data-icon="pin" data-size="20" style="color: var(--brand-blue-600); flex-shrink: 0;"></i>
-          <div>
-            <div class="font-semibold" style="color: var(--ink-900); font-size: 14px;">Центр ПМПК Иркутска</div>
-            <div class="text-xs text-muted mt-2">ул. Лермонтова, 333а</div>
-          </div>
-        </a>
-      </div>
-    </aside>
+    <div data-partial="bottom-nav" data-active="chat"></div>
   </div>
 
   <script src="assets/icons.js"></script>

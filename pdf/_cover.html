@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Особое семейное положение — макеты</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/shared.css">
+  <style>
+    @page { size: 1440px 1024px; margin: 0; }
+    html, body { width: 1440px; height: 1024px; overflow: hidden; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    body { background: #fff; font-family: 'Inter', sans-serif; }
+    .cover {
+      width: 100%; height: 100%;
+      display: grid; grid-template-rows: auto 1fr auto;
+      padding: 96px 112px;
+      box-sizing: border-box;
+    }
+    .cover-top { display: flex; align-items: center; gap: 14px; }
+    .cover-top .brand-mark { width: 44px; height: 44px; border-radius: 12px; }
+    .cover-top .brand-mark::before { inset: 9px; }
+    .cover-top span { font-size: 18px; font-weight: 600; color: var(--ink-900); }
+    .cover-center { display: flex; flex-direction: column; justify-content: center; max-width: 200mm; }
+    .cover-eyebrow {
+      font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--brand-green-700);
+    }
+    .cover-h1 { font-size: 80px; line-height: 1.05; letter-spacing: -0.02em; color: var(--ink-900); margin: 24px 0 0; font-weight: 600; max-width: 1100px; }
+    .cover-sub { font-size: 24px; color: var(--ink-500); margin-top: 24px; max-width: 880px; line-height: 1.4; }
+    .cover-meta {
+      display: grid; grid-template-columns: repeat(4, auto); gap: 0 72px;
+      margin-top: 64px;
+    }
+    .cover-meta-item .label { font-size: 11px; text-transform: uppercase; color: var(--ink-500); font-weight: 600; letter-spacing: 0.06em; }
+    .cover-meta-item .value { font-size: 15px; color: var(--ink-900); font-weight: 500; margin-top: 6px; }
+    .cover-bottom { display: flex; align-items: center; justify-content: space-between; color: var(--ink-500); font-size: 12px; }
+    .ribbon {
+      position: absolute; right: 112px; top: 96px;
+      display: flex; gap: 8px;
+    }
+    .ribbon span { width: 36px; height: 8px; border-radius: 4px; background: var(--ink-200); }
+    .ribbon span.g { background: var(--brand-green-600); }
+    .ribbon span.b { background: var(--brand-blue-600); }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <div class="cover-top">
+      <span class="brand-mark"></span>
+      <span>Особое семейное положение</span>
+    </div>
+
+    <div class="ribbon">
+      <span class="g"></span><span class="b"></span><span></span>
+    </div>
+
+    <div class="cover-center">
+      <div class="cover-eyebrow">Макеты интерфейса · версия 1.0</div>
+      <h1 class="cover-h1">Цифровой AI-навигатор поддержки семей</h1>
+      <p class="cover-sub">Альбом макетов веб-сервиса для семей с детьми с ОВЗ, инвалидов, опекунов и попечителей. Иркутская область.</p>
+
+      <div class="cover-meta">
+        <div class="cover-meta-item">
+          <div class="label">Регион</div>
+          <div class="value">Иркутская область</div>
+        </div>
+        <div class="cover-meta-item">
+          <div class="label">Экранов</div>
+          <div class="value">17</div>
+        </div>
+        <div class="cover-meta-item">
+          <div class="label">Формат</div>
+          <div class="value">Web · десктоп и мобильные</div>
+        </div>
+        <div class="cover-meta-item">
+          <div class="label">Дата сборки</div>
+          <div class="value">27 мая 2026</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cover-bottom">
+      <span>Документ предназначен для согласования визуальной концепции и информационной архитектуры.</span>
+      <span>стр. 1</span>
+    </div>
+  </div>
+
+  <script src="../assets/icons.js"></script>
+</body>
+</html>

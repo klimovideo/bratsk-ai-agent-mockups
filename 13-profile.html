@@ -11,7 +11,7 @@
   <!-- print-tag:start -->
   <div class="print-tag" role="presentation">
     <span><span class="num">13</span> &nbsp; Профиль семьи</span>
-    <span class="desc">Редактирование данных профиля</span>
+    <span class="desc">ИПРА, подпрофили детей, редактирование</span>
     <span>Особое семейное положение · макеты</span>
   </div>
   <!-- print-tag:end -->
@@ -25,91 +25,79 @@
         <div class="flex items-center justify-between">
           <div>
             <h1 class="text-3xl">Профиль семьи</h1>
-            <p class="text-muted mt-2">Эти данные используются навигатором для подбора рекомендаций. Обновляйте, если ситуация изменилась.</p>
+            <p class="text-muted mt-2">Данные из ИПРА или анкеты. При изменении рекомендации пересчитываются автоматически.</p>
           </div>
-          <span class="chip chip-green"><i data-icon="check" data-size="14"></i> Заполнен на 100%</span>
+          <span class="chip chip-green"><i data-icon="check" data-size="14"></i> ИПРА загружена</span>
         </div>
 
-        <!-- Sections -->
         <section class="mt-8">
-          <div class="flex items-center gap-2 mb-2"><i data-icon="user" data-size="18" style="color: var(--brand-green-600);"></i><h2 class="text-xl">Кто пользуется сервисом</h2></div>
-          <div class="card mt-4" style="padding: 0;">
-            <div style="display: grid; grid-template-columns: 240px 1fr auto; padding: 16px 20px; align-items: center;">
-              <span class="text-muted text-sm">Категория</span>
-              <span style="color: var(--ink-900);">Семья с ребёнком с ОВЗ</span>
-              <button class="btn btn-ghost btn-sm"><i data-icon="edit" data-size="14"></i> Изменить</button>
-            </div>
+          <div class="flex items-center justify-between mb-2">
+            <h2 class="text-xl">ИПРА и данные профиля</h2>
+            <button class="btn btn-secondary btn-sm"><i data-icon="upload" data-size="14"></i> Обновить ИПРА</button>
           </div>
-        </section>
-
-        <section class="mt-8">
-          <div class="flex items-center gap-2 mb-2"><i data-icon="pin" data-size="18" style="color: var(--brand-green-600);"></i><h2 class="text-xl">Регион</h2></div>
           <div class="card mt-4" style="padding: 0;">
+            <div style="display: grid; grid-template-columns: 240px 1fr auto; padding: 16px 20px; border-bottom: 1px solid var(--ink-200); align-items: center;">
+              <span class="text-muted text-sm">Источник данных</span>
+              <span style="color: var(--ink-900);">Загружено из Госуслуг · 12.05.2026</span>
+              <button class="btn btn-ghost btn-sm">Просмотреть</button>
+            </div>
             <div style="display: grid; grid-template-columns: 240px 1fr auto; padding: 16px 20px; border-bottom: 1px solid var(--ink-200); align-items: center;">
               <span class="text-muted text-sm">Регион</span>
-              <span style="color: var(--ink-900);">Иркутская область</span>
-              <span class="text-muted text-sm">регион сервиса</span>
-            </div>
-            <div style="display: grid; grid-template-columns: 240px 1fr auto; padding: 16px 20px; align-items: center;">
-              <span class="text-muted text-sm">Город / район</span>
-              <span style="color: var(--ink-900);">Иркутск</span>
-              <button class="btn btn-ghost btn-sm"><i data-icon="edit" data-size="14"></i> Изменить</button>
-            </div>
-          </div>
-        </section>
-
-        <section class="mt-8">
-          <div class="flex items-center gap-2 mb-2"><i data-icon="user" data-size="18" style="color: var(--brand-green-600);"></i><h2 class="text-xl">Состав семьи и статус</h2></div>
-          <div class="card mt-4" style="padding: 0;">
-            <div style="display: grid; grid-template-columns: 240px 1fr auto; padding: 16px 20px; border-bottom: 1px solid var(--ink-200); align-items: center;">
-              <span class="text-muted text-sm">Возраст ребёнка</span>
-              <span style="color: var(--ink-900);">7 лет</span>
-              <button class="btn btn-ghost btn-sm"><i data-icon="edit" data-size="14"></i> Изменить</button>
-            </div>
-            <div style="display: grid; grid-template-columns: 240px 1fr auto; padding: 16px 20px; border-bottom: 1px solid var(--ink-200); align-items: center;">
-              <span class="text-muted text-sm">Статус ОВЗ / инвалидности</span>
-              <span style="color: var(--ink-900);">Установлена инвалидность по слуху</span>
+              <span>Иркутская область, г. Иркутск</span>
               <button class="btn btn-ghost btn-sm"><i data-icon="edit" data-size="14"></i> Изменить</button>
             </div>
             <div style="display: grid; grid-template-columns: 240px 1fr auto; padding: 16px 20px; align-items: center;">
-              <span class="text-muted text-sm">Образовательный статус</span>
-              <span style="color: var(--ink-900);">Учится в общеобразовательной школе, 1 класс</span>
+              <span class="text-muted text-sm">Заключение ПМПК</span>
+              <span>Есть · действует до 2027</span>
               <button class="btn btn-ghost btn-sm"><i data-icon="edit" data-size="14"></i> Изменить</button>
             </div>
           </div>
         </section>
 
         <section class="mt-8">
-          <div class="flex items-center gap-2 mb-2"><i data-icon="check" data-size="18" style="color: var(--brand-green-600);"></i><h2 class="text-xl">Уже получаемые льготы</h2></div>
-          <div class="card mt-4">
-            <div class="flex gap-2" style="flex-wrap: wrap;">
-              <span class="chip chip-green">Пенсия по инвалидности</span>
-              <span class="chip chip-green">Компенсация ЖКУ — 50%</span>
-              <span class="chip chip-green">Бесплатный проезд</span>
-              <button class="chip chip-outline"><i data-icon="plus" data-size="12"></i> Добавить</button>
-            </div>
-            <div class="text-sm text-muted mt-4">Эти данные помогают навигатору не предлагать то, что вы уже получаете.</div>
+          <div class="flex items-center justify-between mb-2">
+            <h2 class="text-xl">Дети (подпрофили)</h2>
+            <button class="btn btn-primary btn-sm"><i data-icon="plus" data-size="14"></i> Добавить ребёнка</button>
           </div>
+          <div class="flex flex-col gap-3 mt-4">
+            <div class="child-card active">
+              <i data-icon="user" data-size="20" style="color: var(--brand-green-600);"></i>
+              <div style="flex:1;">
+                <div class="font-semibold">Алексей К. · 7 лет</div>
+                <div class="text-sm text-muted mt-1">Инвалидность по слуху · 1 класс · ИПРА № 1245/2024</div>
+              </div>
+              <button class="btn btn-ghost btn-sm">Редактировать</button>
+            </div>
+            <div class="child-card">
+              <i data-icon="user" data-size="20" style="color: var(--ink-500);"></i>
+              <div style="flex:1;">
+                <div class="font-semibold">Мария К. · 14 лет</div>
+                <div class="text-sm text-muted mt-1">Статус ОВЗ · 8 класс</div>
+              </div>
+              <button class="btn btn-ghost btn-sm">Редактировать</button>
+            </div>
+          </div>
+          <p class="text-sm text-muted mt-3">Документы создаются от имени выбранного ребёнка. ФИО указывается при каждом документе.</p>
         </section>
 
         <section class="mt-8">
-          <div class="flex items-center gap-2 mb-2"><i data-icon="shield" data-size="18" style="color: var(--brand-green-600);"></i><h2 class="text-xl">Безопасность</h2></div>
+          <h2 class="text-xl">Учётная запись</h2>
           <div class="card mt-4" style="padding: 0;">
             <div style="display: grid; grid-template-columns: 240px 1fr auto; padding: 16px 20px; border-bottom: 1px solid var(--ink-200); align-items: center;">
               <span class="text-muted text-sm">family_id</span>
-              <span class="font-mono" style="color: var(--ink-900);">f7a-9k2-mlv</span>
+              <span class="font-mono">f7a-9k2-mlv</span>
               <button class="btn btn-ghost btn-sm"><i data-icon="copy" data-size="14"></i> Скопировать</button>
             </div>
             <div style="display: grid; grid-template-columns: 240px 1fr auto; padding: 16px 20px; align-items: center;">
               <span class="text-muted text-sm">PIN-код</span>
-              <span style="color: var(--ink-900);">••••</span>
-              <a href="15-settings.html" class="btn btn-ghost btn-sm"><i data-icon="edit" data-size="14"></i> Изменить</a>
+              <span>••••</span>
+              <span class="text-sm text-muted">изменение недоступно</span>
             </div>
           </div>
         </section>
 
         <div class="mt-8" style="padding-top: 24px; border-top: 1px solid var(--ink-200);">
-          <a href="15-settings.html" class="btn-link"><i data-icon="settings" data-size="14"></i> Перейти к настройкам и удалению данных →</a>
+          <a href="15-settings.html" class="btn-link"><i data-icon="settings" data-size="14"></i> Настройки и удаление данных →</a>
         </div>
       </div>
     </main>

@@ -11,7 +11,7 @@
   <!-- print-tag:start -->
   <div class="print-tag" role="presentation">
     <span><span class="num">16</span> &nbsp; Админ · Дашборд</span>
-    <span class="desc">KPI, графики, ключевые метрики</span>
+    <span class="desc">KPI, аудит-лог, статус БЗ</span>
     <span>Особое семейное положение · макеты</span>
   </div>
   <!-- print-tag:end -->
@@ -33,9 +33,9 @@
             <div class="delta">+12% к прошлой неделе</div>
           </div>
           <div class="stat-tile">
-            <div class="label">Без ответа</div>
+            <div class="label">Обращений без ответа</div>
             <div class="value">42</div>
-            <div class="delta down">+5 за сегодня</div>
+            <div class="delta down">агрегат · без текстов вопросов</div>
           </div>
           <div class="stat-tile">
             <div class="label">Документов</div>
@@ -121,41 +121,23 @@
           </div>
         </div>
 
-        <!-- Two columns: unanswered + KB statuses -->
+        <!-- KB statuses + audit -->
         <div class="grid gap-4 mt-6" style="grid-template-columns: 1fr 1fr;">
           <div class="card" style="padding: 0;">
             <div class="flex items-center justify-between" style="padding: 16px 20px; border-bottom: 1px solid var(--ink-200);">
-              <h3 class="text-lg">Свежие вопросы без ответа</h3>
-              <a href="19-admin-unanswered.html" class="btn-link">Все 42 →</a>
+              <h3 class="text-lg">Последние действия администратора</h3>
             </div>
-            <div>
-              <div style="padding: 12px 20px; border-bottom: 1px solid var(--ink-200);">
-                <div class="flex items-start gap-3">
-                  <i data-icon="alert" data-size="18" style="color: var(--danger); margin-top: 2px;"></i>
-                  <div style="flex: 1;">
-                    <div class="text-sm" style="color: var(--ink-900);">«Какие документы нужны для опекунского отчёта за год?»</div>
-                    <div class="text-xs text-muted mt-2">12 минут назад · повторяется 4-й раз</div>
-                  </div>
-                </div>
-              </div>
-              <div style="padding: 12px 20px; border-bottom: 1px solid var(--ink-200);">
-                <div class="flex items-start gap-3">
-                  <i data-icon="alert" data-size="18" style="color: var(--danger); margin-top: 2px;"></i>
-                  <div style="flex: 1;">
-                    <div class="text-sm" style="color: var(--ink-900);">«Можно ли получить компенсацию за сурдоперевод в школе?»</div>
-                    <div class="text-xs text-muted mt-2">38 минут назад</div>
-                  </div>
-                </div>
-              </div>
-              <div style="padding: 12px 20px;">
-                <div class="flex items-start gap-3">
-                  <i data-icon="alert" data-size="18" style="color: var(--danger); margin-top: 2px;"></i>
-                  <div style="flex: 1;">
-                    <div class="text-sm" style="color: var(--ink-900);">«Где в Иркутске оформить ИПРА для взрослого инвалида?»</div>
-                    <div class="text-xs text-muted mt-2">2 часа назад</div>
-                  </div>
-                </div>
-              </div>
+            <div style="padding: 12px 20px; border-bottom: 1px solid var(--ink-200); font-size: 14px;">
+              <div class="text-muted text-xs">Сегодня 14:32 · admin@osfp.ru</div>
+              <div class="mt-1">Загружен материал «Закон Иркутской области № 63-оз»</div>
+            </div>
+            <div style="padding: 12px 20px; border-bottom: 1px solid var(--ink-200); font-size: 14px;">
+              <div class="text-muted text-xs">Вчера 11:05 · admin@osfp.ru</div>
+              <div class="mt-1">Удалён устаревший документ «Постановление 2019»</div>
+            </div>
+            <div style="padding: 12px 20px; font-size: 14px;">
+              <div class="text-muted text-xs">22.05 16:48 · admin@osfp.ru</div>
+              <div class="mt-1">Заменён материал «Методичка Минобрнауки»</div>
             </div>
           </div>
 

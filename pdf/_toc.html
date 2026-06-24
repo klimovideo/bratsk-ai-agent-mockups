@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Содержание</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/shared.css">
+  <style>
+    @page { size: 1440px 1024px; margin: 0; }
+    html, body { width: 1440px; height: 1024px; overflow: hidden; }
+    .page { width: 100%; height: 100%; padding: 80px 112px; box-sizing: border-box; display: flex; flex-direction: column; gap: 48px; }
+    .head { display: flex; align-items: baseline; justify-content: space-between; }
+    .head h1 { font-size: 44px; font-weight: 600; }
+    .toc { display: grid; grid-template-columns: 1fr 1fr; gap: 0 64px; }
+    .toc-section { font-size: 12px; color: var(--brand-green-700); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 6px; padding-bottom: 10px; border-bottom: 2px solid var(--brand-green-600); }
+    .toc-row { display: grid; grid-template-columns: 36px 1fr auto; padding: 11px 0; border-bottom: 1px dotted var(--ink-200); font-size: 15px; }
+    .toc-row .n { font-family: 'JetBrains Mono', monospace; color: var(--ink-500); font-size: 13px; }
+    .toc-row .p { font-family: 'JetBrains Mono', monospace; color: var(--ink-500); font-size: 13px; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="head">
+      <h1>Содержание</h1>
+      <span class="text-muted text-sm">стр. 2 · 17 экранов</span>
+    </div>
+    <div class="toc">
+      <div>
+        <div class="toc-section">Публичная зона</div>
+        <div class="toc-row"><span class="n">01</span><span>Лендинг</span><span class="p">3</span></div>
+        <div class="toc-row"><span class="n">02</span><span>Вход</span><span class="p">4</span></div>
+        <div class="toc-row"><span class="n">03</span><span>Регистрация — профиль (ИПРА)</span><span class="p">5</span></div>
+        <div class="toc-row"><span class="n">04</span><span>Регистрация — family_id и PIN</span><span class="p">6</span></div>
+        <div class="toc-section" style="margin-top: 24px;">Пользовательская зона</div>
+        <div class="toc-row"><span class="n">05</span><span>Главная</span><span class="p">7</span></div>
+        <div class="toc-row"><span class="n">06</span><span>Чат с навигатором</span><span class="p">8</span></div>
+        <div class="toc-row"><span class="n">07</span><span>Документы — загрузка</span><span class="p">9</span></div>
+        <div class="toc-row"><span class="n">08</span><span>Документы — результат</span><span class="p">10</span></div>
+        <div class="toc-row"><span class="n">09</span><span>Каталог рекомендаций</span><span class="p">11</span></div>
+      </div>
+      <div>
+        <div class="toc-section">Пользовательская зона — продолжение</div>
+        <div class="toc-row"><span class="n">10</span><span>Деталь меры поддержки</span><span class="p">12</span></div>
+        <div class="toc-row"><span class="n">11</span><span>Карта организаций</span><span class="p">13</span></div>
+        <div class="toc-row"><span class="n">12</span><span>Карточка организации</span><span class="p">14</span></div>
+        <div class="toc-row"><span class="n">13</span><span>Профиль семьи</span><span class="p">15</span></div>
+        <div class="toc-row"><span class="n">15</span><span>Настройки</span><span class="p">16</span></div>
+        <div class="toc-section" style="margin-top: 24px;">Административная зона</div>
+        <div class="toc-row"><span class="n">16</span><span>Дашборд</span><span class="p">17</span></div>
+        <div class="toc-row"><span class="n">17</span><span>База знаний</span><span class="p">18</span></div>
+        <div class="toc-row"><span class="n">18</span><span>Статистика и выгрузки</span><span class="p">19</span></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

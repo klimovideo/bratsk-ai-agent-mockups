@@ -11,7 +11,7 @@
   <!-- print-tag:start -->
   <div class="print-tag" role="presentation">
     <span><span class="num">15</span> &nbsp; Настройки</span>
-    <span class="desc">Доступность, согласия, удаление данных</span>
+    <span class="desc">Доступность, удаление данных</span>
     <span>Особое семейное положение · макеты</span>
   </div>
   <!-- print-tag:end -->
@@ -24,39 +24,24 @@
       <div class="content content-narrow">
         <h1 class="text-3xl">Настройки</h1>
 
-        <!-- Accessibility -->
         <section class="mt-8">
           <h2 class="text-xl">Доступность</h2>
-          <p class="text-muted text-sm mt-2">Эти настройки сохраняются на вашем устройстве.</p>
-
+          <p class="text-muted text-sm mt-2">Сохраняются на вашем устройстве.</p>
           <div class="card mt-4" style="padding: 0;">
             <div style="display: grid; grid-template-columns: 280px 1fr; padding: 16px 20px; border-bottom: 1px solid var(--ink-200); align-items: center;">
               <div>
-                <div class="font-semibold" style="color: var(--ink-900);">Размер шрифта</div>
-                <div class="text-sm text-muted mt-2">Влияет на всё приложение</div>
+                <div class="font-semibold">Размер шрифта</div>
+                <div class="text-sm text-muted mt-1">Влияет на всё приложение</div>
               </div>
-              <div>
-                <div class="font-switch">
-                  <button class="active">А <span style="margin-left:4px; font-size:11px;">16</span></button>
-                  <button>А <span style="margin-left:4px; font-size:11px;">18</span></button>
-                  <button>А <span style="margin-left:4px; font-size:11px;">20</span></button>
-                </div>
+              <div class="font-switch">
+                <button class="active">А <span style="margin-left:4px; font-size:11px;">16</span></button>
+                <button>А <span style="margin-left:4px; font-size:11px;">18</span></button>
+                <button>А <span style="margin-left:4px; font-size:11px;">20</span></button>
               </div>
-            </div>
-            <div style="display: grid; grid-template-columns: 280px 1fr; padding: 16px 20px; border-bottom: 1px solid var(--ink-200); align-items: center;">
-              <div>
-                <div class="font-semibold" style="color: var(--ink-900);">Повышенный контраст</div>
-                <div class="text-sm text-muted mt-2">Усиливает границы и текст</div>
-              </div>
-              <label class="flex items-center gap-3">
-                <input type="checkbox" style="accent-color: var(--brand-green-600); width: 20px; height: 20px;">
-                <span class="text-sm text-muted">Выкл</span>
-              </label>
             </div>
             <div style="display: grid; grid-template-columns: 280px 1fr; padding: 16px 20px; align-items: center;">
               <div>
-                <div class="font-semibold" style="color: var(--ink-900);">Уменьшить анимации</div>
-                <div class="text-sm text-muted mt-2">Отключает плавные переходы и эффекты</div>
+                <div class="font-semibold">Уменьшить анимации</div>
               </div>
               <label class="flex items-center gap-3">
                 <input type="checkbox" checked style="accent-color: var(--brand-green-600); width: 20px; height: 20px;">
@@ -66,56 +51,31 @@
           </div>
         </section>
 
-        <!-- Consents -->
-        <section class="mt-8">
-          <h2 class="text-xl">Согласия на обработку данных</h2>
-          <div class="card mt-4" style="padding: 0;">
-            <div style="display: grid; grid-template-columns: 1fr auto; padding: 16px 20px; border-bottom: 1px solid var(--ink-200); align-items: center; gap: 16px;">
-              <div>
-                <div class="font-semibold" style="color: var(--ink-900);">Согласие на обработку персональных данных (152-ФЗ)</div>
-                <div class="text-sm text-muted mt-2">Действует с 25 мая 2026 · версия 1.0</div>
-              </div>
-              <button class="btn btn-secondary btn-sm">Посмотреть текст</button>
-            </div>
-            <div style="display: grid; grid-template-columns: 1fr auto; padding: 16px 20px; align-items: center; gap: 16px;">
-              <div>
-                <div class="font-semibold" style="color: var(--ink-900);">Согласие на обработку документов</div>
-                <div class="text-sm text-muted mt-2">Подтверждается каждый раз при загрузке</div>
-              </div>
-              <span class="chip chip-outline">по запросу</span>
-            </div>
-          </div>
-        </section>
-
-        <!-- Account -->
         <section class="mt-8">
           <h2 class="text-xl">Учётная запись</h2>
           <div class="card mt-4" style="padding: 0;">
             <div style="display: grid; grid-template-columns: 280px 1fr auto; padding: 16px 20px; border-bottom: 1px solid var(--ink-200); align-items: center;">
               <span class="text-muted text-sm">family_id</span>
-              <span class="font-mono" style="color: var(--ink-900);">f7a-9k2-mlv</span>
+              <span class="font-mono">f7a-9k2-mlv</span>
               <button class="btn btn-ghost btn-sm"><i data-icon="copy" data-size="14"></i> Скопировать</button>
             </div>
             <div style="display: grid; grid-template-columns: 280px 1fr auto; padding: 16px 20px; align-items: center;">
               <span class="text-muted text-sm">PIN-код</span>
-              <span style="color: var(--ink-900);">••••</span>
-              <button class="btn btn-ghost btn-sm"><i data-icon="edit" data-size="14"></i> Изменить</button>
+              <span>••••</span>
+              <span class="text-sm text-muted">нельзя изменить</span>
             </div>
           </div>
         </section>
 
-        <!-- Delete data -->
         <section class="mt-8">
           <h2 class="text-xl">Удаление данных</h2>
           <div class="card mt-4" style="border-color: #FEEBEA; background: #FFFAFA;">
             <div class="flex gap-3 items-start">
               <i data-icon="alert" data-size="20" style="color: var(--danger); margin-top: 2px;"></i>
               <div style="flex: 1;">
-                <div class="font-semibold" style="color: var(--danger);">Удалить мой профиль и историю</div>
-                <div class="text-sm mt-2" style="color: var(--ink-700);">Будут безвозвратно удалены: профиль семьи, все диалоги, история обработанных документов, сохранённые рекомендации. Восстановить данные после удаления невозможно.</div>
-                <div class="flex gap-3 mt-6">
-                  <button class="btn btn-danger"><i data-icon="trash" data-size="14"></i> Удалить мои данные</button>
-                </div>
+                <div class="font-semibold" style="color: var(--danger);">Удалить профиль и все данные</div>
+                <div class="text-sm mt-2" style="color: var(--ink-700);">Будут безвозвратно удалены: профиль семьи, подпрофили детей, рекомендации. Обезличенная аналитика для отчётности сохранится. Восстановление невозможно — придётся создать новый профиль.</div>
+                <button class="btn btn-danger mt-6"><i data-icon="trash" data-size="14"></i> Удалить мои данные</button>
               </div>
             </div>
           </div>

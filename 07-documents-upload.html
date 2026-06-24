@@ -11,7 +11,7 @@
   <!-- print-tag:start -->
   <div class="print-tag" role="presentation">
     <span><span class="num">07</span> &nbsp; Документы — загрузка</span>
-    <span class="desc">Загрузка PDF/DOCX/TXT, согласие на обработку</span>
+    <span class="desc">ФИО, выбор ребёнка, без хранения файла</span>
     <span>Особое семейное положение · макеты</span>
   </div>
   <!-- print-tag:end -->
@@ -23,91 +23,66 @@
 
       <div class="content content-narrow">
         <h1 class="text-3xl">Объясним документ простым языком</h1>
-        <p class="text-muted mt-2">Загрузите PDF, DOCX или TXT — навигатор выделит ключевые положения и подскажет следующие шаги. Документ не сохраняется после обработки.</p>
+        <p class="text-muted mt-2">Загрузите PDF, DOCX или TXT. Файл обрабатывается и не сохраняется на сервере. Результат можно скачать в PDF или текст.</p>
 
-        <!-- Tabs -->
-        <div class="card mt-8" style="padding: 0; overflow: hidden;">
-          <div role="tablist" style="display: flex; border-bottom: 1px solid var(--ink-200);">
-            <button role="tab" aria-selected="true" style="flex: 1; padding: 16px; background: transparent; border: none; font-weight: 600; color: var(--brand-green-700); border-bottom: 2px solid var(--brand-green-600); margin-bottom: -1px;">
-              <i data-icon="upload" data-size="16"></i> Загрузить файл
-            </button>
-            <button role="tab" aria-selected="false" style="flex: 1; padding: 16px; background: transparent; border: none; font-weight: 500; color: var(--ink-500);">
-              <i data-icon="file" data-size="16"></i> Вставить текст
-            </button>
-          </div>
-
-          <!-- Dropzone -->
-          <div style="padding: 32px;">
-            <div style="border: 2px dashed var(--ink-300); border-radius: var(--radius-lg); padding: 48px 24px; text-align: center; background: var(--surface-muted);">
-              <i data-icon="upload" data-size="40" style="color: var(--brand-green-600);"></i>
-              <h3 class="text-xl mt-4">Перетащите файл сюда</h3>
-              <p class="text-muted mt-2 text-sm">или нажмите кнопку ниже</p>
-              <button class="btn btn-primary mt-6"><i data-icon="upload" data-size="16"></i> Выбрать файл</button>
-              <div class="text-xs text-muted mt-6">Поддерживаются PDF, DOCX, TXT. Размер до 20 МБ.</div>
+        <div class="card mt-6" style="padding: 20px;">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="field">
+              <label class="label" for="child">От имени кого документ</label>
+              <select id="child" class="select">
+                <option>Алексей К. · 7 лет</option>
+                <option>Мария К. · 14 лет</option>
+              </select>
             </div>
-
-            <!-- File selected (state preview) -->
-            <div class="mt-6">
-              <div style="padding: 16px; background: var(--surface); border: 1px solid var(--ink-200); border-radius: var(--radius-md); display: flex; align-items: center; gap: 12px;">
-                <i data-icon="file" data-size="20" style="color: var(--brand-blue-600);"></i>
-                <div style="flex: 1;">
-                  <div class="font-semibold" style="color: var(--ink-900); font-size: 14px;">Уведомление о назначении пенсии.pdf</div>
-                  <div class="text-xs text-muted mt-2">142 КБ · готов к обработке</div>
-                </div>
-                <button class="btn btn-ghost btn-sm" aria-label="Убрать"><i data-icon="close" data-size="16"></i></button>
-              </div>
+            <div class="field">
+              <label class="label" for="fio">ФИО для документа</label>
+              <input id="fio" class="input" placeholder="Иванов Иван Иванович" value="Козлов Алексей Петрович">
+              <span class="helper">Указывается при каждом документе. Не хранится в профиле.</span>
             </div>
           </div>
         </div>
 
-        <!-- Consent -->
-        <div class="card mt-6" style="padding: 16px 20px; border-color: #FFD466; background: #FFFBEF;">
+        <div class="card mt-6" style="padding: 0; overflow: hidden;">
+          <div role="tablist" style="display: flex; border-bottom: 1px solid var(--ink-200);">
+            <button role="tab" aria-selected="true" style="flex: 1; padding: 16px; background: transparent; border: none; font-weight: 600; color: var(--brand-green-700); border-bottom: 2px solid var(--brand-green-600); margin-bottom: -1px;">
+              <i data-icon="upload" data-size="16"></i> Загрузить файл
+            </button>
+            <button role="tab" style="flex: 1; padding: 16px; background: transparent; border: none; font-weight: 500; color: var(--ink-500);">
+              <i data-icon="file" data-size="16"></i> Вставить текст
+            </button>
+          </div>
+          <div style="padding: 32px;">
+            <div style="border: 2px dashed var(--ink-300); border-radius: var(--radius-lg); padding: 48px 24px; text-align: center; background: var(--surface-muted);">
+              <i data-icon="upload" data-size="40" style="color: var(--brand-green-600);"></i>
+              <h3 class="text-xl mt-4">Перетащите файл сюда</h3>
+              <button class="btn btn-primary mt-6"><i data-icon="upload" data-size="16"></i> Выбрать файл</button>
+              <div class="text-xs text-muted mt-6">PDF, DOCX, TXT · до 20 МБ</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mt-6" style="padding: 16px 20px; border-color: #E5E7EB;">
           <div class="flex gap-3">
-            <i data-icon="info" data-size="20" style="color: #8A6B00; flex-shrink: 0; margin-top: 2px;"></i>
-            <div style="flex: 1;">
-              <div class="font-semibold" style="color: #8A6B00; font-size: 15px;">Как мы обрабатываем документ</div>
-              <ul class="text-sm mt-2" style="padding-left: 20px;">
-                <li>Документ <strong>не сохраняется</strong> после обработки.</li>
-                <li>Перед отправкой в AI прямые персональные данные (ФИО, номера документов) автоматически маскируются.</li>
-                <li>Ответ носит информационный характер и не является юридическим заключением.</li>
+            <i data-icon="info" data-size="20" style="color: var(--brand-blue-600); flex-shrink: 0;"></i>
+            <div class="text-sm">
+              <div class="font-semibold">Как обрабатываем документ</div>
+              <ul class="mt-2" style="padding-left: 18px; color: var(--ink-700);">
+                <li>Файл <strong>не сохраняется</strong> после обработки.</li>
+                <li>Персональные данные маскируются перед анализом ИИ.</li>
+                <li>Результат помечается как <span class="ai-badge" style="font-size: 11px; padding: 2px 8px;">Сгенерировано ИИ</span>.</li>
               </ul>
-              <label class="flex items-center gap-3 mt-4" style="font-size: 14px;">
-                <input type="checkbox" checked style="accent-color: var(--brand-green-600); width: 18px; height: 18px;">
-                <span>Я понимаю и подтверждаю обработку документа</span>
+              <label class="flex items-center gap-3 mt-4">
+                <input type="checkbox" checked style="accent-color: var(--brand-green-600);">
+                <span>Я понимаю условия обработки</span>
               </label>
             </div>
           </div>
         </div>
 
-        <!-- Action -->
         <div class="flex gap-3 mt-6" style="justify-content: flex-end;">
           <button class="btn btn-secondary">Отмена</button>
           <a href="08-documents-result.html" class="btn btn-primary btn-lg"><i data-icon="sparkles" data-size="18"></i> Объяснить документ</a>
         </div>
-
-        <!-- Recent (history of single-shot doc results — no storage of file) -->
-        <section class="mt-8">
-          <h2 class="text-xl">Прошлые объяснения</h2>
-          <p class="text-sm text-muted mt-2">Сохраняем только результат объяснения, не сам файл.</p>
-          <div class="card mt-4" style="padding: 0;">
-            <div style="display: flex; gap: 16px; padding: 16px 20px; border-bottom: 1px solid var(--ink-200); align-items: center;">
-              <i data-icon="file" data-size="20" style="color: var(--ink-500);"></i>
-              <div style="flex: 1;">
-                <div class="font-semibold" style="color: var(--ink-900); font-size: 15px;">Решение ПМПК.docx</div>
-                <div class="text-xs text-muted mt-2">2 дня назад</div>
-              </div>
-              <a href="08-documents-result.html" class="btn btn-ghost btn-sm">Открыть результат</a>
-            </div>
-            <div style="display: flex; gap: 16px; padding: 16px 20px; align-items: center;">
-              <i data-icon="file" data-size="20" style="color: var(--ink-500);"></i>
-              <div style="flex: 1;">
-                <div class="font-semibold" style="color: var(--ink-900); font-size: 15px;">Уведомление о льготе ЖКУ.pdf</div>
-                <div class="text-xs text-muted mt-2">Неделю назад</div>
-              </div>
-              <a href="08-documents-result.html" class="btn btn-ghost btn-sm">Открыть результат</a>
-            </div>
-          </div>
-        </section>
       </div>
     </main>
 

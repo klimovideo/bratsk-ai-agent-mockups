@@ -437,6 +437,37 @@ button { font-family: inherit; cursor: pointer; }
 .conf-partial { background: #FFF6DC; color: #8A6B00; }
 .conf-not-found { background: #FEEBEA; color: var(--danger); }
 
+.ai-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 4px 10px; border-radius: 999px;
+  font-size: 12px; font-weight: 600; letter-spacing: 0.02em;
+  background: var(--brand-blue-100); color: var(--brand-blue-700);
+}
+
+.support-fallback {
+  margin-top: 16px; padding: 16px 20px;
+  background: #FFFBEF; border: 1px solid #FFD466; border-radius: var(--radius-md);
+}
+.support-fallback .phone {
+  font-size: 20px; font-weight: 600; color: var(--ink-900);
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+.ipra-choice {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+}
+@media (max-width: 900px) {
+  .ipra-choice { grid-template-columns: 1fr; }
+}
+
+.child-card {
+  padding: 14px 16px; border: 1px solid var(--ink-200); border-radius: var(--radius-md);
+  display: flex; align-items: center; gap: 12px; cursor: pointer;
+}
+.child-card.active {
+  border-color: var(--brand-green-600); background: var(--brand-green-100);
+}
+
 /* Tables */
 .table { width: 100%; border-collapse: collapse; background: var(--surface); border-radius: var(--radius-lg); overflow: hidden; }
 .table th, .table td { padding: 14px 16px; text-align: left; font-size: 15px; }

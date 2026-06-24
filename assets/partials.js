@@ -13,7 +13,6 @@ const PARTIALS = {
       <a href="09-recommendations.html" class="nav-item ${active==='recommendations'?'active':''}"><i data-icon="sparkles"></i> Рекомендации</a>
       <a href="07-documents-upload.html" class="nav-item ${active==='documents'?'active':''}"><i data-icon="file"></i> Документы</a>
       <a href="11-places.html" class="nav-item ${active==='places'?'active':''}"><i data-icon="map"></i> Организации</a>
-      <a href="14-history.html" class="nav-item ${active==='history'?'active':''}"><i data-icon="history"></i> История</a>
       <a href="13-profile.html" class="nav-item ${active==='profile'?'active':''}"><i data-icon="user"></i> Профиль</a>
       <div style="flex:1"></div>
       <a href="15-settings.html" class="nav-item ${active==='settings'?'active':''}"><i data-icon="settings"></i> Настройки</a>
@@ -30,8 +29,7 @@ const PARTIALS = {
       <a href="16-admin-dashboard.html" class="nav-item ${active==='dashboard'?'active':''}"><i data-icon="chart"></i> Дашборд</a>
       <a href="17-admin-knowledge.html" class="nav-item ${active==='knowledge'?'active':''}"><i data-icon="database"></i> База знаний</a>
       <a href="18-admin-stats.html" class="nav-item ${active==='stats'?'active':''}"><i data-icon="chart"></i> Статистика</a>
-      <a href="19-admin-unanswered.html" class="nav-item ${active==='unanswered'?'active':''}"><i data-icon="alert"></i> Без ответа <span style="margin-left:auto; background: var(--danger); color:#fff; font-size:11px; padding: 1px 7px; border-radius: 999px;">12</span></a>
-      <a href="#" class="nav-item"><i data-icon="download"></i> Выгрузки</a>
+      <a href="18-admin-stats.html#exports" class="nav-item ${active==='exports'?'active':''}"><i data-icon="download"></i> Выгрузки</a>
       <div style="flex:1"></div>
       <a href="#" class="nav-item"><i data-icon="settings"></i> Настройки</a>
       <a href="02-login.html" class="nav-item"><i data-icon="exit"></i> Выйти</a>
